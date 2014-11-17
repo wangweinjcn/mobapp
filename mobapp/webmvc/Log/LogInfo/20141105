@@ -1,0 +1,730 @@
+
+日志时间：2014-11-05 14:26:35,227 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 14:26:35,227 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 14:26:57,325 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Index 
+
+日志时间：2014-11-05 14:26:57,325 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Index 
+
+日志时间：2014-11-05 14:29:31,154 [10] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 14:29:31,154 [10] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 14:29:53,191 [11] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 14:29:53,191 [11] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 14:33:11,797 [11] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 14:33:11,797 [11] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 14:34:49,254 [13] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 14:34:49,254 [13] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 14:35:08,893 [13] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 14:35:08,893 [13] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 14:35:30,011 [13] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 14:35:30,011 [13] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 14:36:34,672 [9] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 14:36:34,672 [9] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 14:38:17,656 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 14:38:17,656 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 14:38:29,555 [12] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 14:38:29,555 [12] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 14:38:37,904 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 14:38:37,904 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 14:38:52,900 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Index 
+
+日志时间：2014-11-05 14:38:52,900 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Index 
+
+日志时间：2014-11-05 15:57:04,609 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 15:57:04,609 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 15:57:22,928 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 15:57:22,928 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 15:58:05,659 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 15:58:05,659 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 15:58:05,676 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Index 
+
+日志时间：2014-11-05 15:58:05,676 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Index 
+
+日志时间：2014-11-05 15:58:11,862 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]Index 
+
+日志时间：2014-11-05 15:58:11,862 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]Index 
+
+日志时间：2014-11-05 15:58:24,945 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]Index 
+
+日志时间：2014-11-05 15:58:24,945 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]Index 
+
+日志时间：2014-11-05 15:58:29,912 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]About 
+
+日志时间：2014-11-05 15:58:29,912 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]About 
+
+日志时间：2014-11-05 16:02:22,270 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:02:22,270 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:02:33,883 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:02:33,883 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:02:45,053 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:02:45,053 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:02:45,064 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Index 
+
+日志时间：2014-11-05 16:02:45,064 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Index 
+
+日志时间：2014-11-05 16:03:35,628 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]Index 
+
+日志时间：2014-11-05 16:03:35,628 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]Index 
+
+日志时间：2014-11-05 16:04:01,981 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:04:01,981 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:04:36,365 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:04:36,365 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:05:15,018 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:05:15,018 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:05:19,908 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Index 
+
+日志时间：2014-11-05 16:05:19,908 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Index 
+
+日志时间：2014-11-05 16:10:53,954 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:10:53,954 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:11:00,666 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:11:00,666 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:11:08,751 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:11:08,751 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:11:08,763 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Index 
+
+日志时间：2014-11-05 16:11:08,763 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Index 
+
+日志时间：2014-11-05 16:11:16,082 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Initdb 
+
+日志时间：2014-11-05 16:11:16,082 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Initdb 
+
+日志时间：2014-11-05 16:11:23,218 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]About 
+
+日志时间：2014-11-05 16:11:23,218 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]About 
+
+日志时间：2014-11-05 16:11:33,483 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]About 
+
+日志时间：2014-11-05 16:11:33,483 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]About 
+
+日志时间：2014-11-05 16:11:35,549 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Index 
+
+日志时间：2014-11-05 16:11:35,549 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Index 
+
+日志时间：2014-11-05 16:16:20,633 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:16:20,633 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:16:29,356 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:16:29,356 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:16:39,018 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:16:39,018 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:18:10,485 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]Index 
+
+日志时间：2014-11-05 16:18:10,485 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]Index 
+
+日志时间：2014-11-05 16:18:24,854 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]About 
+
+日志时间：2014-11-05 16:18:24,854 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]About 
+
+日志时间：2014-11-05 16:22:39,795 [9] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:22:39,795 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]Index 
+
+日志时间：2014-11-05 16:22:39,795 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]Index 
+
+日志时间：2014-11-05 16:22:39,795 [9] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:22:50,582 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:22:50,582 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:23:16,121 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:23:16,121 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:29:24,568 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]Index 
+
+日志时间：2014-11-05 16:29:24,568 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]Index 
+
+日志时间：2014-11-05 16:29:32,695 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]LogOff 
+
+日志时间：2014-11-05 16:29:32,695 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]LogOff 
+
+日志时间：2014-11-05 16:29:32,764 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:29:32,764 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:29:36,000 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:29:36,000 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:29:50,534 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:29:50,534 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:29:50,542 [10] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Index 
+
+日志时间：2014-11-05 16:29:50,542 [10] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Index 
+
+日志时间：2014-11-05 16:29:57,509 [10] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:29:57,509 [10] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:30:03,969 [10] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:30:03,969 [10] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:30:11,557 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:30:11,557 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:30:11,652 [10] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Index 
+
+日志时间：2014-11-05 16:30:11,652 [10] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Index 
+
+日志时间：2014-11-05 16:30:32,609 [9] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:30:32,609 [9] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:33:54,664 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]Index 
+
+日志时间：2014-11-05 16:33:54,664 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]Index 
+
+日志时间：2014-11-05 16:34:02,659 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]Index 
+
+日志时间：2014-11-05 16:34:02,659 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]Index 
+
+日志时间：2014-11-05 16:34:05,197 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]LogOff 
+
+日志时间：2014-11-05 16:34:05,197 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]LogOff 
+
+日志时间：2014-11-05 16:34:05,255 [12] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:34:05,255 [12] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:34:09,247 [10] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:34:09,247 [10] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:34:17,582 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:34:17,582 [6] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:34:17,596 [12] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:34:17,596 [12] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:34:25,193 [10] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:34:25,193 [10] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:34:25,207 [12] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:34:25,207 [12] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:36:56,870 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:36:56,870 [8] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:37:02,939 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:37:02,939 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:37:12,033 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:37:12,033 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Login 
+
+日志时间：2014-11-05 16:37:12,041 [9] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Index 
+
+日志时间：2014-11-05 16:37:12,041 [9] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Admin[action:]Index 
+
+日志时间：2014-11-05 16:37:15,860 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:37:15,860 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:39:51,679 [9] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:39:51,679 [9] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:47:08,925 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-11-05 16:47:08,925 [7] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 

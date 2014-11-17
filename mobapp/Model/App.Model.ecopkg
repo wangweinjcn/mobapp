@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package Name="App.Model" AdditionalNamespaces="" CodeGenCharacterMode="AllowUnicode" DefaultLength="255" GenerateNullableTypes="True" NameSpace="&lt;Default&gt;" ORMappingConfigMode="Medium" PluralSuffix="" id="cc70e87e-8d01-4644-87f9-849f18cb3db4">
+  <DefaultSuperClass>
+    <Class Name="base_class" idref="1301cfd7-1f1d-4694-b6d9-79d926e714b1" />
+  </DefaultSuperClass>
+  <OwnedElement>
+    <Association Name="" EffectiveName="menuitemmenuitemmenugroupmenugroup" id="285d1d7b-79d2-41ad-90d7-7d014dbf270b">
+      <AssociationEnd>
+        <AssociationEnd Name="" EffectiveName="menugroup" IsNavigable="True" Multiplicity="0..1" Visibility="Public" id="014a02b9-99d7-46d6-96f4-8cf3b9577e0c">
+          <Participant>
+            <Class Name="menugroup" idref="5c78977c-a410-44ad-a729-1b74e43a551d" />
+          </Participant>
+        </AssociationEnd>
+        <AssociationEnd Name="" EffectiveName="menuitem" IsNavigable="True" Multiplicity="0..*" Visibility="Public" id="c65ca723-50f2-4ded-8592-10197200482a">
+          <Participant>
+            <Class Name="menuitem" idref="70702906-7062-474e-b7c0-574a844958ba" />
+          </Participant>
+        </AssociationEnd>
+      </AssociationEnd>
+    </Association>
+    <Association Name="" EffectiveName="user_roleuser_roleuseruser" id="53c662cc-06e2-4454-a3b5-659ab1dfc10e">
+      <AssociationEnd>
+        <AssociationEnd Name="" EffectiveName="user" IsNavigable="True" Multiplicity="0..1" Visibility="Public" id="f0048243-9ab1-42f2-a043-fdd80ac7f3ef">
+          <Participant>
+            <Class Name="user" idref="0d14d9b1-acc4-4db1-a5c4-5c2575662fe6" />
+          </Participant>
+        </AssociationEnd>
+        <AssociationEnd Name="" EffectiveName="user_role" IsNavigable="True" Multiplicity="0..*" Visibility="Public" id="f5930890-d968-482c-b110-1bdbaad6922a">
+          <Participant>
+            <Class Name="user_role" idref="07638513-c3e8-401e-8c3f-5be8ce2e4456" />
+          </Participant>
+        </AssociationEnd>
+      </AssociationEnd>
+    </Association>
+    <Association Name="" EffectiveName="deptmy_deptuserdept_allusers" id="747a59c9-81a4-4d1b-83fd-788d13a12e26">
+      <AssociationEnd>
+        <AssociationEnd Name="my_dept" IsNavigable="True" Multiplicity="0..*" Visibility="Public" id="dada5684-539a-477f-aff4-d38d1c1b1b58">
+          <Participant>
+            <Class Name="dept" idref="3ae899bf-fa72-464a-9079-b82abf1ca05c" />
+          </Participant>
+        </AssociationEnd>
+        <AssociationEnd Name="dept_allusers" IsNavigable="True" Multiplicity="0..*" Visibility="Public" id="8c02c9f7-690d-4c28-9621-c7566b3987ee">
+          <Participant>
+            <Class Name="user" idref="0d14d9b1-acc4-4db1-a5c4-5c2575662fe6" />
+          </Participant>
+        </AssociationEnd>
+      </AssociationEnd>
+    </Association>
+    <Association Name="" EffectiveName="rolesrolesuser_roleuser_role" id="98755c47-1bb3-455a-9806-b3716a3e9cf7">
+      <AssociationEnd>
+        <AssociationEnd Name="" EffectiveName="roles" IsNavigable="True" Multiplicity="0..1" Visibility="Public" id="c5e051b3-051d-4b75-b39f-d813b991b89c">
+          <Participant>
+            <Class Name="roles" idref="18047d46-fd28-431d-87d4-a6f1bad088ba" />
+          </Participant>
+        </AssociationEnd>
+        <AssociationEnd Name="" EffectiveName="user_role" IsNavigable="True" Multiplicity="0..*" Visibility="Public" id="9e658502-8531-4390-a22e-365dd7d59f7f">
+          <Participant>
+            <Class Name="user_role" idref="07638513-c3e8-401e-8c3f-5be8ce2e4456" />
+          </Participant>
+        </AssociationEnd>
+      </AssociationEnd>
+    </Association>
+    <Association Name="" EffectiveName="userupdate_userbase_classnoname2" id="a0774ac9-6b33-47c6-b473-34159f9eab5e">
+      <AssociationEnd>
+        <AssociationEnd Name="noname2" IsNavigable="True" Multiplicity="0..*" Visibility="Public" id="41cd7f5f-562b-4c2c-955a-2e462ea427f4">
+          <Participant>
+            <Class Name="base_class" idref="1301cfd7-1f1d-4694-b6d9-79d926e714b1" />
+          </Participant>
+        </AssociationEnd>
+        <AssociationEnd Name="update_user" IsNavigable="True" Multiplicity="0..1" Visibility="Public" id="d42893a6-94e3-4b5d-aa33-53544f39b9b8">
+          <Participant>
+            <Class Name="user" idref="0d14d9b1-acc4-4db1-a5c4-5c2575662fe6" />
+          </Participant>
+        </AssociationEnd>
+      </AssociationEnd>
+    </Association>
+    <Association Name="" EffectiveName="basetreebasetree_childrenbasetreebasetree_parent" id="abd54141-93f8-4a84-9d89-ebd7e6756a45">
+      <AssociationEnd>
+        <AssociationEnd Name="basetree_parent" IsNavigable="True" Multiplicity="1" Visibility="Public" id="9d0b58f3-8490-4086-9b0b-b21facf1a63e">
+          <Participant>
+            <Class Name="basetree" idref="0a5a94b3-07c2-43b6-a9b5-456a486a1613" />
+          </Participant>
+        </AssociationEnd>
+        <AssociationEnd Name="basetree_children" IsNavigable="True" Multiplicity="0..*" Visibility="Public" id="e5619c7a-a417-44e4-8675-4569de9a15d2">
+          <Participant>
+            <Class Name="basetree" idref="0a5a94b3-07c2-43b6-a9b5-456a486a1613" />
+          </Participant>
+        </AssociationEnd>
+      </AssociationEnd>
+    </Association>
+    <Association Name="" EffectiveName="userdept_managerdeptown_dept" id="c5912d32-fa3a-4c87-98a4-6f0cf95432a5">
+      <AssociationEnd>
+        <AssociationEnd Name="own_dept" IsNavigable="True" Multiplicity="0..*" Visibility="Public" id="1b3ec297-2c1a-4cf4-8943-562802c421cd">
+          <Participant>
+            <Class Name="dept" idref="3ae899bf-fa72-464a-9079-b82abf1ca05c" />
+          </Participant>
+        </AssociationEnd>
+        <AssociationEnd Name="dept_manager" IsNavigable="True" Multiplicity="0..1" Visibility="Public" id="d411d7cb-948a-46a5-951f-14872f0b9c96">
+          <Participant>
+            <Class Name="user" idref="0d14d9b1-acc4-4db1-a5c4-5c2575662fe6" />
+          </Participant>
+        </AssociationEnd>
+      </AssociationEnd>
+    </Association>
+    <Package Name="comm" AdditionalNamespaces="" CodeGenCharacterMode="AllowUnicode" DefaultLength="255" GenerateNullableTypes="True" NameSpace="&lt;Default&gt;" ORMappingConfigMode="Medium" PluralSuffix="" id="e8d854d3-86d4-4ce6-8598-976c251a96a8">
+      <OwnedElement>
+        <Class Name="delete_obj" AdditionalNamespaces="" IsAbstract="False" IsSealed="False" id="04b274fe-0d45-4f51-a04c-c299328db70a">
+          <Feature>
+            <Attribute Name="jsonobj" Multiplicity="" Visibility="Public" id="86a5b7e5-c303-47b3-acbd-33188860e487">
+              <Type>
+                <Datatype idref="Text" />
+              </Type>
+            </Attribute>
+          </Feature>
+        </Class>
+        <Class Name="user_role" AdditionalNamespaces="" IsAbstract="False" IsSealed="False" id="07638513-c3e8-401e-8c3f-5be8ce2e4456">
+          <Feature>
+            <Attribute Name="name" Multiplicity="" Visibility="Public" id="1d3ee97e-f4c7-4fb3-a4dc-71e91dee27e5">
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="role_name" Multiplicity="" Visibility="Public" id="2e83858f-6931-465b-9205-5f28b18fd880">
+              <TaggedValue>
+                <TaggedValue Tag="persistence" Value="transient" />
+                <TaggedValue Tag="derived" Value="True" />
+                <TaggedValue Tag="Eco.DerivationOCL" Value="&#xD;&#xA;if self.user-&gt;IsEmpty then&#xD;&#xA;''&#xD;&#xA;else&#xD;&#xA;self.roles.name&#xD;&#xA;endif" />
+              </TaggedValue>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="user_name" Multiplicity="" Visibility="Public" id="36b21626-639a-49e4-9678-45d02fd332c4">
+              <TaggedValue>
+                <TaggedValue Tag="persistence" Value="transient" />
+                <TaggedValue Tag="derived" Value="True" />
+                <TaggedValue Tag="Eco.DerivationOCL" Value="if self.user-&gt;IsEmpty then&#xD;&#xA;''&#xD;&#xA;else&#xD;&#xA;self.user.Username&#xD;&#xA;endif" />
+                <TaggedValue Tag="Eco.Length" Value="20" />
+              </TaggedValue>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+          </Feature>
+          <Superclass>
+            <Class Name="base_class" idref="1301cfd7-1f1d-4694-b6d9-79d926e714b1" />
+          </Superclass>
+        </Class>
+        <Class Name="basetree" AdditionalNamespaces="" IsAbstract="True" IsSealed="False" id="0a5a94b3-07c2-43b6-a9b5-456a486a1613">
+          <Feature>
+            <Attribute Name="p_key" Multiplicity="" Visibility="Public" id="06ac2686-b99a-46b7-9fd4-58b37726318f">
+              <TaggedValue>
+                <TaggedValue Tag="derived" Value="True" />
+                <TaggedValue Tag="Eco.DerivationOCL" Value="if self.basetree_parent=nil then&#xD;&#xA;'-1'&#xD;&#xA;else&#xD;&#xA;self.basetree_parent.key&#xD;&#xA;endif" />
+              </TaggedValue>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="note" Multiplicity="" Visibility="Public" id="51dafb41-a1b3-4157-8e4e-bb7102b0c3f2">
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="treekey" Multiplicity="" Visibility="Public" id="a8445dae-5376-4b7a-b76b-f59a2506870d">
+              <TaggedValue>
+                <TaggedValue Tag="derived" Value="True" />
+                <TaggedValue Tag="Eco.DerivationOCL" Value="&#xD;&#xA;if self.basetree_parent-&gt;isempty then&#xD;&#xA;self.externalId&#xD;&#xA;else&#xD;&#xA;self.basetree_parent.externalId+'_'+self.externalId&#xD;&#xA;endif&#xD;&#xA;" />
+              </TaggedValue>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="key" Multiplicity="" Visibility="Public" id="b8f5ca97-9b82-40c7-a661-4cbbaf97cad0">
+              <TaggedValue>
+                <TaggedValue Tag="derived" Value="True" />
+                <TaggedValue Tag="Eco.DerivationOCL" Value="self.externalId&#xD;&#xA;&#xD;&#xA;" />
+              </TaggedValue>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Method Name="setparent" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="False" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="e0ba3563-1592-428f-85e3-be922569528c">
+              <Parameter>
+                <Parameter Name="pkey" Kind="In">
+                  <Type>
+                    <Datatype idref="String" />
+                  </Type>
+                </Parameter>
+              </Parameter>
+            </Method>
+            <Method Name="getparent" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="False" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="e7c6560b-118b-450b-8767-6f3c37f74605">
+              <ReturnParameter>
+                <Parameter Name="returnparam" Kind="Out">
+                  <Type>
+                    <Datatype idref="basetree" />
+                  </Type>
+                </Parameter>
+              </ReturnParameter>
+            </Method>
+          </Feature>
+          <Superclass>
+            <Class Name="base_class" idref="1301cfd7-1f1d-4694-b6d9-79d926e714b1" />
+          </Superclass>
+          <TaggedValue>
+            <TaggedValue Tag="Eco.TableMapping" Value="Children" />
+          </TaggedValue>
+        </Class>
+        <Class Name="user" AdditionalNamespaces="" IsAbstract="False" IsSealed="False" id="0d14d9b1-acc4-4db1-a5c4-5c2575662fe6">
+          <Constraint>
+            <Constraint Name="constraint-user.username.length-gt" Body="OCL: self.Username.Length&gt;0" Description="名称字段值必须大于0" ErrorLevel="Error" IsDeleteConstraint="False" id="44414a87-ba82-4f75-b4af-5827b91239c2" />
+            <Constraint Name="constraint-user.username.length-lt" Body="OCL: self.Username.Length&lt;40" Description="&lt;40" ErrorLevel="Error" IsDeleteConstraint="False" id="84c69882-0b90-4f13-a0fd-194f39b8b037" />
+            <Constraint Name="constraint-user.email.formate-check" Body="OCL: true" Description="" ErrorLevel="Error" IsDeleteConstraint="False" id="9e6ff84f-78b4-40af-a12d-3c53caf5f920" />
+            <Constraint Name="constraint-user.sex.value-check" Body="OCL: (self.sex&gt;=0) and  (self.sex&lt;2)" Description="" ErrorLevel="Error" IsDeleteConstraint="False" id="a2b2b59a-741d-4522-9e0d-0c5908007f45" />
+            <Constraint Name="constraint-user.email.length-gt" Body="OCL: self.email.Length&gt;0" Description="" ErrorLevel="Error" IsDeleteConstraint="False" id="b7097bd7-9f54-49dc-8414-4d819905112b" />
+            <Constraint Name="constraint-user.password.length-gt" Body="OCL: self.password.length&gt;0" Description="" ErrorLevel="Error" IsDeleteConstraint="False" id="bc977273-9ca2-4c94-8aa9-fa30dfe5e360" />
+          </Constraint>
+          <Feature>
+            <Attribute Name="Password" InitialValue="yourpass" Multiplicity="" Visibility="Public" id="00d786cd-6862-4f57-82df-84717ffd6cb3">
+              <TaggedValue>
+                <TaggedValue Tag="Eco.HasUserCode" Value="True" />
+              </TaggedValue>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="Username" InitialValue="name" Multiplicity="" Visibility="Public" id="0cb36d0b-1e9a-4205-a498-d0882ba82838">
+              <TaggedValue>
+                <TaggedValue Tag="Eco.HasUserCode" Value="True" />
+              </TaggedValue>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Method Name="setcurrentuser" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="False" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="37c4be59-03f2-4b7f-b39c-fe9b3467d597" />
+            <Attribute Name="RememberMe" InitialValue="true" Multiplicity="" Visibility="Public" id="6711766e-fe57-4374-a9e9-bf0e923b9756">
+              <TaggedValue>
+                <TaggedValue Tag="persistence" Value="transient" />
+              </TaggedValue>
+              <Type>
+                <Datatype idref="Boolean" />
+              </Type>
+            </Attribute>
+            <Attribute Name="education" Multiplicity="" Visibility="Public" id="7dcaf325-9dcc-4c65-b8b3-7a3a39511a07">
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="ConfirmPassword" Multiplicity="" Visibility="Public" id="8248fc9e-d041-4bdd-8289-33c4146df569">
+              <TaggedValue>
+                <TaggedValue Tag="Eco.HasUserCode" Value="True" />
+                <TaggedValue Tag="persistence" Value="transient" />
+              </TaggedValue>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="email" InitialValue="yourname@kk.com" Multiplicity="" Visibility="Public" id="8ae2a270-55e2-4b38-bd7b-9046775f8472">
+              <TaggedValue>
+                <TaggedValue Tag="Eco.HasUserCode" Value="True" />
+              </TaggedValue>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="birthday" Multiplicity="" Visibility="Public" id="b98d527a-6704-454b-986e-6faea9700b6c">
+              <Type>
+                <Datatype idref="DateTime" />
+              </Type>
+            </Attribute>
+            <Attribute Name="sex" InitialValue="0" Multiplicity="" Visibility="Public" id="e032ef31-0f69-4420-961c-47ca9a8c646d">
+              <Type>
+                <Datatype idref="Integer" />
+              </Type>
+            </Attribute>
+          </Feature>
+          <Superclass>
+            <Class Name="base_class" idref="1301cfd7-1f1d-4694-b6d9-79d926e714b1" />
+          </Superclass>
+        </Class>
+        <Class Name="base_class" AdditionalNamespaces="" IsAbstract="True" IsSealed="False" id="1301cfd7-1f1d-4694-b6d9-79d926e714b1">
+          <Feature>
+            <Method Name="OnCreate" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="False" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="0c3f2e56-3111-4164-a5fb-43fda11aa557" />
+            <Method Name="OnUpdate" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="False" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="251d89af-5d75-434a-9131-fa448608fc13" />
+            <Attribute Name="EID" Multiplicity="" Visibility="Public" id="3143ba19-e119-4cf5-98b3-a22903110272">
+              <TaggedValue>
+                <TaggedValue Tag="derived" Value="True" />
+                <TaggedValue Tag="Eco.DerivationOCL" Value="self.externalId" />
+              </TaggedValue>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="creater" Multiplicity="" Visibility="Public" id="352023f3-8830-47f0-a6ec-e762b40ebf73">
+              <TaggedValue>
+                <TaggedValue Tag="derived" Value="True" />
+                <TaggedValue Tag="Eco.DerivationOCL" Value="if self.create_user-&gt;isempty then&#xD;&#xA;''&#xD;&#xA;else&#xD;&#xA;self.create_user.username&#xD;&#xA;endif" />
+              </TaggedValue>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Method Name="OnDelete" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="False" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="6ccb52be-8dc2-479f-8ab1-4f8ead284f4a" />
+            <Attribute Name="updater" Multiplicity="" Visibility="Public" id="76fcfbc7-3d11-4d19-9d93-cc90e21d8ae3">
+              <TaggedValue>
+                <TaggedValue Tag="derived" Value="True" />
+                <TaggedValue Tag="Eco.DerivationOCL" Value="if self.update_user-&gt;isempty then&#xD;&#xA;''&#xD;&#xA;else&#xD;&#xA;self.update_user.username&#xD;&#xA;endif" />
+              </TaggedValue>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="create_dt" Multiplicity="" Visibility="Public" id="78103b81-381d-4f27-b28a-34c6f4e255f9">
+              <Type>
+                <Datatype idref="DateTime" />
+              </Type>
+            </Attribute>
+            <Attribute Name="newobj_id" Multiplicity="" Visibility="Public" id="d42e7682-a868-47a5-9f8a-d15529037712">
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="update_dt" Multiplicity="" SetterVisibility="Protected" Visibility="Public" id="eeed9b70-9f7e-47b5-b9ea-6f86d11296df">
+              <TaggedValue>
+                <TaggedValue Tag="Eco.HasUserCode" Value="True" />
+              </TaggedValue>
+              <Type>
+                <Datatype idref="DateTime" />
+              </Type>
+            </Attribute>
+          </Feature>
+          <TaggedValue>
+            <TaggedValue Tag="Eco.TableMapping" Value="Children" />
+          </TaggedValue>
+        </Class>
+        <Class Name="roles" AdditionalNamespaces="" IsAbstract="False" IsSealed="False" id="18047d46-fd28-431d-87d4-a6f1bad088ba">
+          <Feature>
+            <Attribute Name="is_admin" Multiplicity="" Visibility="Public" id="5535b623-60b4-4dd8-a351-d26521308ec6">
+              <Type>
+                <Datatype idref="Boolean" />
+              </Type>
+            </Attribute>
+            <Attribute Name="name" Multiplicity="" Visibility="Public" id="8bd98080-45e5-46ca-85d7-e1a93ab1cc84">
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="role_key" Multiplicity="" Visibility="Public" id="eebda1b1-61f1-448b-9346-30a581ea9a4a">
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+          </Feature>
+          <Superclass>
+            <Class Name="base_class" idref="1301cfd7-1f1d-4694-b6d9-79d926e714b1" />
+          </Superclass>
+        </Class>
+        <Class Name="dept" AdditionalNamespaces="" IsAbstract="False" IsSealed="False" id="3ae899bf-fa72-464a-9079-b82abf1ca05c">
+          <Feature>
+            <Method Name="setdeptmanager" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="False" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="1f85b637-be04-4e0f-86d6-b8d6177c33aa">
+              <Parameter>
+                <Parameter Name="userid" Kind="In">
+                  <Type>
+                    <Datatype idref="String" />
+                  </Type>
+                </Parameter>
+              </Parameter>
+            </Method>
+            <Attribute Name="name" InitialValue="new dept" Multiplicity="" Visibility="Public" id="2253a612-fe02-4377-a9c4-1cd16d1581f9">
+              <TaggedValue>
+                <TaggedValue Tag="Eco.HasUserCode" Value="True" />
+              </TaggedValue>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Method Name="addsubdept" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="False" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="24359b27-b6e9-4d4f-b008-d85f248226d9">
+              <Parameter>
+                <Parameter Name="newdept" Kind="In">
+                  <Type>
+                    <Datatype idref="dept" />
+                  </Type>
+                </Parameter>
+              </Parameter>
+              <ReturnParameter>
+                <Parameter Name="returnparam" Kind="Out">
+                  <Type>
+                    <Datatype idref="dept" />
+                  </Type>
+                </Parameter>
+              </ReturnParameter>
+            </Method>
+            <Method Name="addnewuser" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="False" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="3f950039-4b32-4d58-9e80-67fd917c6c9d">
+              <Parameter>
+                <Parameter Name="newuser" Kind="In">
+                  <Type>
+                    <Datatype idref="user" />
+                  </Type>
+                </Parameter>
+              </Parameter>
+              <ReturnParameter>
+                <Parameter Name="returnparam" Kind="Out">
+                  <Type>
+                    <Datatype idref="user" />
+                  </Type>
+                </Parameter>
+              </ReturnParameter>
+            </Method>
+            <Method Name="addsubdept" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="False" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="643d72df-3bd6-4844-9593-7e2b728fb7cd">
+              <Parameter>
+                <Parameter Name="name" Kind="In">
+                  <Type>
+                    <Datatype idref="String" />
+                  </Type>
+                </Parameter>
+              </Parameter>
+              <ReturnParameter>
+                <Parameter Name="returnparam" Kind="Out">
+                  <Type>
+                    <Datatype idref="dept" />
+                  </Type>
+                </Parameter>
+              </ReturnParameter>
+            </Method>
+            <Method Name="setdeptmanager" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="False" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="85025b1c-b15e-4501-a467-176ad1f2695f">
+              <Parameter>
+                <Parameter Name="owner" Kind="In">
+                  <Type>
+                    <Datatype idref="user" />
+                  </Type>
+                </Parameter>
+              </Parameter>
+            </Method>
+            <Method Name="addnewuser" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="False" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="a52e40a3-9ce3-4fb2-851d-01f1dd2af239">
+              <Parameter>
+                <Parameter Name="username" Kind="In">
+                  <Type>
+                    <Datatype idref="String" />
+                  </Type>
+                </Parameter>
+              </Parameter>
+              <ReturnParameter>
+                <Parameter Name="returnparam" Kind="Out">
+                  <Type>
+                    <Datatype idref="user" />
+                  </Type>
+                </Parameter>
+              </ReturnParameter>
+            </Method>
+          </Feature>
+          <Superclass>
+            <Class Name="basetree" idref="0a5a94b3-07c2-43b6-a9b5-456a486a1613" />
+          </Superclass>
+        </Class>
+        <Class Name="menugroup" AdditionalNamespaces="" IsAbstract="False" IsSealed="False" id="5c78977c-a410-44ad-a729-1b74e43a551d">
+          <Feature>
+            <Attribute Name="key" Multiplicity="" Visibility="Public" id="0a8e6aa7-e58e-43cd-a888-4fed7ed597fe">
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="name" Multiplicity="" Visibility="Public" id="36d65eb9-ec32-4d70-b5b7-50134f01b8f9">
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+          </Feature>
+          <Superclass>
+            <Class Name="base_class" idref="1301cfd7-1f1d-4694-b6d9-79d926e714b1" />
+          </Superclass>
+        </Class>
+        <Class Name="data_action_log" AdditionalNamespaces="" IsAbstract="False" IsSealed="False" id="667976fc-4f78-4a01-9bff-c37c737970c5">
+          <Feature>
+            <Attribute Name="fromip" Multiplicity="" Visibility="Public" id="15c30adc-45c9-447a-a32d-b40e12b36b04">
+              <ModelDocumentation>
+                <ModelDocumentation Content="UEsDBBQAAAAIAPaBhUGxb5yO8AIAAKgHAAASABwAWGFtbC9Eb2N1bWVudC54YW1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/zqdtUS3Td4ty2Xz20bxtV4/u3m2m83yRNeNFMa2rpjpvx9NqcfeqWJ6/u7u3s/Pp3XfZory7qvMmX7YZAHwECI+aVTbNP/uIv6gv84/SN/m79rgsLpYLavjZR8/z8/aj9HmxzL+dFxdz+uR43VYfpWfNt69X83zJoE6X2aTMZ5999Cwrm1wAl9ny4rOP8uX2uvkofVZWV0+LWjAXoG+qV4D3UfpivZjk9ev1pGmLdo0G45N12a7r/HW1roEcUIq28/8gxBp9j/qrlu2zbFGU15999J//DX/sf/b3/6ny2ev2uiSAL6p6kZXy0Xd1WP5nr9s6b6fzzofFD+jV3T38VecXdbVe0oh//NmzHX6Icter6qLOVvPr8es2W86yeva8uMiAEc3Tm3qdB21OCCYNbJ2Vm1o9LZopIUMDzOprr6FS2mv57aJpq7qYBvD6zY6Xy0oY4Lhs85omEO1C9B1qfpsebq5Hosgi2tvvRW8XYIT+8LNV0Wbla+I/btB/9yRr8tf5sina4jIf7AFTSngU09d5u3tTg72bGty7qcH+TQ3u39Tg05saPLipwcFNDR7eSKidG1vcSMvdG4m5eyM1d28k5+6N9Ny9kaC7N1J09+DGFjfSdC9K02d1pkrP6BL/9TJr5vnsp/K6ir37RdZCqbeQsM/rPH8ba3SaNe1xU2TL03ervG4H5eQns5oatU0UERXG+JekePOaJDXUnf0GntWINLJ4freYtfN4T7bNczIe6+wi3p1Rrq+vQL0NymuggZ20UAEePX6Z1Rm3OXr8ar30rNgP5tvT5UdH/9U/+Of9l3/VH/tf/YN/wX/xJ/zl/+Wf84edvXx8l9odPb7rvXhXzfPR/xMAAP//UEsDBAoAAAAAAPaBhUFFRoEeDAEAAAwBAAALABwAX3JlbHMvLnJlbHMgohgAKKAUAAAAAAAAAAAAAAAAAAAAAAAAAAAA77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmVsYXRpb25zaGlwcyB4bWxucz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3JnL3BhY2thZ2UvMjAwNi9yZWxhdGlvbnNoaXBzIj48UmVsYXRpb25zaGlwIFR5cGU9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3BmLzIwMDUvMTAveGFtbC9lbnRyeSIgVGFyZ2V0PSIvWGFtbC9Eb2N1bWVudC54YW1sIiBJZD0iUmQ1NjhmNzg2MmY2MDQxMGEiIC8+PC9SZWxhdGlvbnNoaXBzPlBLAwQKAAAAAAD2gYVBNc31dyoBAAAqAQAAEwAcAFtDb250ZW50X1R5cGVzXS54bWwgohgAKKAUAAAAAAAAAAAAAAAAAAAAAAAAAAAA77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48VHlwZXMgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9wYWNrYWdlLzIwMDYvY29udGVudC10eXBlcyI+PERlZmF1bHQgRXh0ZW5zaW9uPSJ4YW1sIiBDb250ZW50VHlwZT0iYXBwbGljYXRpb24vdm5kLm1zLXdwZi54YW1sK3htbCIgLz48RGVmYXVsdCBFeHRlbnNpb249InJlbHMiIENvbnRlbnRUeXBlPSJhcHBsaWNhdGlvbi92bmQub3BlbnhtbGZvcm1hdHMtcGFja2FnZS5yZWxhdGlvbnNoaXBzK3htbCIgLz48L1R5cGVzPlBLAQItABQAAAAIAPaBhUGxb5yO8AIAAKgHAAASAAAAAAAAAAAAAAAAAAAAAABYYW1sL0RvY3VtZW50LnhhbWxQSwECLQAKAAAAAAD2gYVBRUaBHgwBAAAMAQAACwAAAAAAAAAAAAAAAAA8AwAAX3JlbHMvLnJlbHNQSwECLQAKAAAAAAD2gYVBNc31dyoBAAAqAQAAEwAAAAAAAAAAAAAAAACNBAAAW0NvbnRlbnRfVHlwZXNdLnhtbFBLBQYAAAAAAwADALoAAAAEBgAAAAA=" />
+              </ModelDocumentation>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="charcount" Multiplicity="" Visibility="Public" id="3804808d-2c87-4767-b7ea-298c9825ea24">
+              <ModelDocumentation>
+                <ModelDocumentation Content="UEsDBBQAAAAIAIeBhkGr1jEa8gIAAKoHAAASABwAWGFtbC9Eb2N1bWVudC54YW1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/zqdtUS3Td4ty2Xz20bxtV4/u3m2m83yRNeNFMa2rpjpvx9NqcfeqWJ6/u7u3s/Pp3XfZory7qvMmX7YZAHwECI+aVTbNP/uIv6gv84/SN/m79rgsLpYLavjZR8/z8/aj9HmxzL+dFxdz+uR43VYfpWfNt69X83zJoE6X2aTMZ5999Cwrm1wAl9ny4rOP8uX2uvkofVZWV0+LWjAXoG+qV4D3UfpivZjk9ev1pGmLdo0G45N12a7r/HW1roEcUIq28/8gxBp9j/qrlu2zbFGU15999J//DX/sf/b3/6ny2ev2uiSAL6p6kZXy0Xd1WP5nr9s6b6fzzofFD+jV3T38VecXdbVe0oh//NmzHX6Icter6qLOVvPr8es2W86yeva8uMiAEc3Tm3qdB21OCCYNbJ2Vm1o9LZopIUMDzOprr6FS2mv57aJpq7qYBvD6zY6Xy0oY4Lhs85omEO1C9B1qfpsebq5Hosgi2tvvRW8XYIT+8LNV0Wbla+I/btB/9yRr8tf5sina4jIf7AFTSngU09d5u3tTg72bGty7qcH+TQ3u39Tg05saPLipwcFNDR7eSKidG1vcSMvdG4m5eyM1d28k5+6N9Ny9kaC7N1J09+DGFjfSdC9K02d1pkrP6BL/9TJr5vnsp/K6ir37RdZCqbeQsM/rPH8ba3SaNe1xU2TL03ervG4H5eQns5oatU0UERXG+JekePOaJDXUnf0GntWINLJ4freYtfN4T7bNczIe6+wi3p1Rrq+vQL0NymuggZ20UAEePX6Z1Rm3OXr8ar30rNgP5tvT5UdHP91Uy//yb/57//O/4I/9z//6P/O//Ov+iv/iT/+bHt+llkeP73qv3lUDffT/BAAA//9QSwMECgAAAAAAh4GGQYK8pTsMAQAADAEAAAsAHABfcmVscy8ucmVscyCiGAAooBQAAAAAAAAAAAAAAAAAAAAAAAAAAADvu788P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJ1dGYtOCI/PjxSZWxhdGlvbnNoaXBzIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvcGFja2FnZS8yMDA2L3JlbGF0aW9uc2hpcHMiPjxSZWxhdGlvbnNoaXAgVHlwZT0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cGYvMjAwNS8xMC94YW1sL2VudHJ5IiBUYXJnZXQ9Ii9YYW1sL0RvY3VtZW50LnhhbWwiIElkPSJSYTZlNGM2MjA5NjJiNDJkNiIgLz48L1JlbGF0aW9uc2hpcHM+UEsDBAoAAAAAAIeBhkE1zfV3KgEAACoBAAATABwAW0NvbnRlbnRfVHlwZXNdLnhtbCCiGAAooBQAAAAAAAAAAAAAAAAAAAAAAAAAAADvu788P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJ1dGYtOCI/PjxUeXBlcyB4bWxucz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3JnL3BhY2thZ2UvMjAwNi9jb250ZW50LXR5cGVzIj48RGVmYXVsdCBFeHRlbnNpb249InhhbWwiIENvbnRlbnRUeXBlPSJhcHBsaWNhdGlvbi92bmQubXMtd3BmLnhhbWwreG1sIiAvPjxEZWZhdWx0IEV4dGVuc2lvbj0icmVscyIgQ29udGVudFR5cGU9ImFwcGxpY2F0aW9uL3ZuZC5vcGVueG1sZm9ybWF0cy1wYWNrYWdlLnJlbGF0aW9uc2hpcHMreG1sIiAvPjwvVHlwZXM+UEsBAi0AFAAAAAgAh4GGQavWMRryAgAAqgcAABIAAAAAAAAAAAAAAAAAAAAAAFhhbWwvRG9jdW1lbnQueGFtbFBLAQItAAoAAAAAAIeBhkGCvKU7DAEAAAwBAAALAAAAAAAAAAAAAAAAAD4DAABfcmVscy8ucmVsc1BLAQItAAoAAAAAAIeBhkE1zfV3KgEAACoBAAATAAAAAAAAAAAAAAAAAI8EAABbQ29udGVudF9UeXBlc10ueG1sUEsFBgAAAAADAAMAugAAAAYGAAAAAA==" />
+              </ModelDocumentation>
+              <Type>
+                <Datatype idref="Int64" />
+              </Type>
+            </Attribute>
+            <Attribute Name="delete_obj_jsonobj" Multiplicity="" Visibility="Public" id="763fe675-071b-499d-be0e-e373255e78d1">
+              <TaggedValue>
+                <TaggedValue Tag="Eco.AllowNULL" Value="True" />
+              </TaggedValue>
+              <Type>
+                <Datatype idref="Text" />
+              </Type>
+            </Attribute>
+            <Attribute Name="clienttype" Multiplicity="" Visibility="Public" id="7f25e4d3-0c6b-445b-8435-6e9d38dac886">
+              <ModelDocumentation>
+                <ModelDocumentation Content="UEsDBBQAAAAIAIeBhkHBaMvjBgMAAB0IAAASABwAWGFtbC9Eb2N1bWVudC54YW1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/zqdtUS3Td4ty2Xz20bxtV4/u3m2m83yRNeNFMa2rpjpvx9NqcfeqWJ6/u7u3s/Pp3XfZory7qvMmX7YZAHwECI+aVTbNP/uIv6gv84/SN/m79rgsLpYLavjZR8/z8/aj9HmxzL+dFxdz+uR43VYfpWfNt69X83zJoE6X2aTMZ5999Cwrm1wAl9ny4rOP8uX2uvkofVZWV0+LWjAXoG+qV4D3UfpivZjk9ev1pGmLdo0G45N12a7r/HW1roEcUIq28/8gxBp9j/qrlu2zbFGU15999J//DX/sf/b3/6ny2ev2uiSAL6p6kZXy0Xd1WP5nr9s6b6fzzofFD+jV3T38VecXdbVe0oh//NmzHX6Icter6qLOVvPr8es2W86yeva8uMiAEc3Tm3qdB21OCCYNbJ2Vm1o9LZopIUMDzOprr6FS2mv57aJpq7qYBvD6zY6Xy0oY4Lhs85omEO1C9B1qfpsebq5Hosgi2tvvRW8XYIT+8LNV0Wbla+I/btB/9yRr8tf5sina4jIf7AFTSngU09d5u3tTg72bGty7qcH+TQ3u39Tg05saPLipwcFNDR7eSKidG1vcSMvdG4m5eyM1d28k5+6N9Ny9kaC7N1J09+DGFjfSdC9K02d1pkrP6BL/9TJr5vnsp/K6ir37RdZCqbeQsM/rPH8ba3SaNe1xU2TL03ervG4H5eQns5oatU0UERXG+JekePOaJDXUnf0GntWINLJ4freYtfN4T7bNczIe6+wi3p1Rrq+vQL0NymuggZ20UAEePX6Z1Rm3OXr8ar30rNgP5tvT5UdH//nf8Jf8F3/U3/lf/rV/43/5N/+9//lf8Mc+vkutjh7f9V67CcLO//j3/TlX+eRrvLlLb07Lgqjbe5kAqU9w9P8EAAD//1BLAwQKAAAAAACHgYZBA02AzwwBAAAMAQAACwAcAF9yZWxzLy5yZWxzIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAO+7vzw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9InV0Zi04Ij8+PFJlbGF0aW9uc2hpcHMgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9wYWNrYWdlLzIwMDYvcmVsYXRpb25zaGlwcyI+PFJlbGF0aW9uc2hpcCBUeXBlPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dwZi8yMDA1LzEwL3hhbWwvZW50cnkiIFRhcmdldD0iL1hhbWwvRG9jdW1lbnQueGFtbCIgSWQ9IlJlN2IxMWM4MmM4Y2Y0OTI2IiAvPjwvUmVsYXRpb25zaGlwcz5QSwMECgAAAAAAh4GGQTXN9XcqAQAAKgEAABMAHABbQ29udGVudF9UeXBlc10ueG1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAO+7vzw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9InV0Zi04Ij8+PFR5cGVzIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvcGFja2FnZS8yMDA2L2NvbnRlbnQtdHlwZXMiPjxEZWZhdWx0IEV4dGVuc2lvbj0ieGFtbCIgQ29udGVudFR5cGU9ImFwcGxpY2F0aW9uL3ZuZC5tcy13cGYueGFtbCt4bWwiIC8+PERlZmF1bHQgRXh0ZW5zaW9uPSJyZWxzIiBDb250ZW50VHlwZT0iYXBwbGljYXRpb24vdm5kLm9wZW54bWxmb3JtYXRzLXBhY2thZ2UucmVsYXRpb25zaGlwcyt4bWwiIC8+PC9UeXBlcz5QSwECLQAUAAAACACHgYZBwWjL4wYDAAAdCAAAEgAAAAAAAAAAAAAAAAAAAAAAWGFtbC9Eb2N1bWVudC54YW1sUEsBAi0ACgAAAAAAh4GGQQNNgM8MAQAADAEAAAsAAAAAAAAAAAAAAAAAUgMAAF9yZWxzLy5yZWxzUEsBAi0ACgAAAAAAh4GGQTXN9XcqAQAAKgEAABMAAAAAAAAAAAAAAAAAowQAAFtDb250ZW50X1R5cGVzXS54bWxQSwUGAAAAAAMAAwC6AAAAGgYAAAAA" />
+              </ModelDocumentation>
+              <TaggedValue>
+                <TaggedValue Tag="Eco.AllowNULL" Value="True" />
+              </TaggedValue>
+              <Type>
+                <Datatype idref="Integer" />
+              </Type>
+            </Attribute>
+            <Attribute Name="ecoid" Multiplicity="" Visibility="Public" id="8dfeb7f9-fd67-4918-a812-f1c3841a7deb">
+              <ModelDocumentation>
+                <ModelDocumentation Content="UEsDBBQAAAAIAIaBhkEl1AXz4QIAAJ8HAAASABwAWGFtbC9Eb2N1bWVudC54YW1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/zqdtUS3Td4ty2Xz20bxtV4/u3m2m83yRNeNFMa2rpjpvx9NqcfeqWJ6/u7u3s/Pp3XfZory7qvMmX7YZAHwECI+aVTbNP/uIv6gv84/SN/m79rgsLpYLavjZR8/z8/aj9HmxzL+dFxdz+uR43VYfpWfNt69X83zJoE6X2aTMZ5999Cwrm1wAl9ny4rOP8uX2uvkofVZWV0+LWjAXoG+qV4D3UfpivZjk9ev1pGmLdo0G45N12a7r/HW1roEcUIq28/8gxBp9j/qrlu2zbFGU15999J//DX/sf/b3/6ny2ev2uiSAL6p6kZXy0Xd1WP5nr9s6b6fzzofFD+jV3T38VecXdbVe0oh//NmzHX6Icter6qLOVvPr8es2W86yeva8uMiAEc3Tm3qdB21OCCYNbJ2Vm1o9LZopIUMDzOprr6FS2mv57aJpq7qYBvD6zY6Xy0oY4Lhs85omEO1C9B1qfpsebq5Hosgi2tvvRW8XYIT+8LNV0Wbla+I/btB/9yRr8tf5sina4jIf7AFTSngU09d5u3tTg72bGty7qcH+TQ3u39Tg05saPLipwcFNDR7eSKidG1vcSMvdG4m5eyM1d28k5+6N9Ny9kaC7N1J09+DGFjfSdC9K02d1pkrP6BL/9TJr5vnsp/K6ir37RdZCqbeQsM/rPH8ba3SaNe1xU2TL03ervG4H5eQns5oatU0UERXG+JekePOaJDXUnf0GntWINLJ4freYtfN4T7bNczIe6+wi3p1Rrq+vQL0NymuggZ20UAEePX6Z1Rm3OXr8ar30rNgP5tvT5UdH/9k/+Df8F3/a33329PFd+vro8V2v/V21ykf/TwAAAP//UEsDBAoAAAAAAIaBhkE8tww5DAEAAAwBAAALABwAX3JlbHMvLnJlbHMgohgAKKAUAAAAAAAAAAAAAAAAAAAAAAAAAAAA77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmVsYXRpb25zaGlwcyB4bWxucz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3JnL3BhY2thZ2UvMjAwNi9yZWxhdGlvbnNoaXBzIj48UmVsYXRpb25zaGlwIFR5cGU9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3BmLzIwMDUvMTAveGFtbC9lbnRyeSIgVGFyZ2V0PSIvWGFtbC9Eb2N1bWVudC54YW1sIiBJZD0iUjcxNmFiM2E4YjNjZjRhMjYiIC8+PC9SZWxhdGlvbnNoaXBzPlBLAwQKAAAAAACGgYZBNc31dyoBAAAqAQAAEwAcAFtDb250ZW50X1R5cGVzXS54bWwgohgAKKAUAAAAAAAAAAAAAAAAAAAAAAAAAAAA77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48VHlwZXMgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9wYWNrYWdlLzIwMDYvY29udGVudC10eXBlcyI+PERlZmF1bHQgRXh0ZW5zaW9uPSJ4YW1sIiBDb250ZW50VHlwZT0iYXBwbGljYXRpb24vdm5kLm1zLXdwZi54YW1sK3htbCIgLz48RGVmYXVsdCBFeHRlbnNpb249InJlbHMiIENvbnRlbnRUeXBlPSJhcHBsaWNhdGlvbi92bmQub3BlbnhtbGZvcm1hdHMtcGFja2FnZS5yZWxhdGlvbnNoaXBzK3htbCIgLz48L1R5cGVzPlBLAQItABQAAAAIAIaBhkEl1AXz4QIAAJ8HAAASAAAAAAAAAAAAAAAAAAAAAABYYW1sL0RvY3VtZW50LnhhbWxQSwECLQAKAAAAAACGgYZBPLcMOQwBAAAMAQAACwAAAAAAAAAAAAAAAAAtAwAAX3JlbHMvLnJlbHNQSwECLQAKAAAAAACGgYZBNc31dyoBAAAqAQAAEwAAAAAAAAAAAAAAAAB+BAAAW0NvbnRlbnRfVHlwZXNdLnhtbFBLBQYAAAAAAwADALoAAAD1BQAAAAA=" />
+              </ModelDocumentation>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="do_dt" Multiplicity="" Visibility="Public" id="bacede2c-4418-4fbd-be18-7958ab08f341">
+              <ModelDocumentation>
+                <ModelDocumentation Content="UEsDBBQAAAAIAIaBhkH2wHOw3gIAAJ0HAAASABwAWGFtbC9Eb2N1bWVudC54YW1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/zqdtUS3Td4ty2Xz20bxtV4/u3m2m83yRNeNFMa2rpjpvx9NqcfeqWJ6/u7u3s/Pp3XfZory7qvMmX7YZAHwECI+aVTbNP/uIv6gv84/SN/m79rgsLpYLavjZR8/z8/aj9HmxzL+dFxdz+uR43VYfpWfNt69X83zJoE6X2aTMZ5999Cwrm1wAl9ny4rOP8uX2uvkofVZWV0+LWjAXoG+qV4D3UfpivZjk9ev1pGmLdo0G45N12a7r/HW1roEcUIq28/8gxBp9j/qrlu2zbFGU15999J//DX/sf/b3/6ny2ev2uiSAL6p6kZXy0Xd1WP5nr9s6b6fzzofFD+jV3T38VecXdbVe0oh//NmzHX6Icter6qLOVvPr8es2W86yeva8uMiAEc3Tm3qdB21OCCYNbJ2Vm1o9LZopIUMDzOprr6FS2mv57aJpq7qYBvD6zY6Xy0oY4Lhs85omEO1C9B1qfpsebq5Hosgi2tvvRW8XYIT+8LNV0Wbla+I/btB/9yRr8tf5sina4jIf7AFTSngU09d5u3tTg72bGty7qcH+TQ3u39Tg05saPLipwcFNDR7eSKidG1vcSMvdG4m5eyM1d28k5+6N9Ny9kaC7N1J09+DGFjfSdC9K02d1pkrP6BL/9TJr5vnsp/K6ir37RdZCqbeQsM/rPH8ba3SaNe1xU2TL03ervG4H5eQns5oatU0UERXG+JekePOaJDXUnf0GntWINLJ4freYtfN4T7bNczIe6+wi3p1Rrq+vQL0NymuggZ20UAEePX6Z1Rm3OXr8ar30rNgP5tvT5UdH/8Wf+Xf813/m3/b4Ln159Piu1/qu2uSj/ycAAP//UEsDBAoAAAAAAIaBhkG6BIptDAEAAAwBAAALABwAX3JlbHMvLnJlbHMgohgAKKAUAAAAAAAAAAAAAAAAAAAAAAAAAAAA77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmVsYXRpb25zaGlwcyB4bWxucz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3JnL3BhY2thZ2UvMjAwNi9yZWxhdGlvbnNoaXBzIj48UmVsYXRpb25zaGlwIFR5cGU9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3BmLzIwMDUvMTAveGFtbC9lbnRyeSIgVGFyZ2V0PSIvWGFtbC9Eb2N1bWVudC54YW1sIiBJZD0iUmQ2OTkxYzZhZTc4ODRkNTgiIC8+PC9SZWxhdGlvbnNoaXBzPlBLAwQKAAAAAACGgYZBNc31dyoBAAAqAQAAEwAcAFtDb250ZW50X1R5cGVzXS54bWwgohgAKKAUAAAAAAAAAAAAAAAAAAAAAAAAAAAA77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48VHlwZXMgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9wYWNrYWdlLzIwMDYvY29udGVudC10eXBlcyI+PERlZmF1bHQgRXh0ZW5zaW9uPSJ4YW1sIiBDb250ZW50VHlwZT0iYXBwbGljYXRpb24vdm5kLm1zLXdwZi54YW1sK3htbCIgLz48RGVmYXVsdCBFeHRlbnNpb249InJlbHMiIENvbnRlbnRUeXBlPSJhcHBsaWNhdGlvbi92bmQub3BlbnhtbGZvcm1hdHMtcGFja2FnZS5yZWxhdGlvbnNoaXBzK3htbCIgLz48L1R5cGVzPlBLAQItABQAAAAIAIaBhkH2wHOw3gIAAJ0HAAASAAAAAAAAAAAAAAAAAAAAAABYYW1sL0RvY3VtZW50LnhhbWxQSwECLQAKAAAAAACGgYZBugSKbQwBAAAMAQAACwAAAAAAAAAAAAAAAAAqAwAAX3JlbHMvLnJlbHNQSwECLQAKAAAAAACGgYZBNc31dyoBAAAqAQAAEwAAAAAAAAAAAAAAAAB7BAAAW0NvbnRlbnRfVHlwZXNdLnhtbFBLBQYAAAAAAwADALoAAADyBQAAAAA=" />
+              </ModelDocumentation>
+              <Type>
+                <Datatype idref="DateTime" />
+              </Type>
+            </Attribute>
+            <Attribute Name="action" Multiplicity="" Visibility="Public" id="dadeda6c-2a52-4fb4-b0d1-cff57d1534cc">
+              <ModelDocumentation>
+                <ModelDocumentation Content="UEsDBBQAAAAIAE2JhkFwYRw9AwMAAPQHAAASABwAWGFtbC9Eb2N1bWVudC54YW1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/zqdtUS3Td4ty2Xz20bxtV4/u3m2m83yRNeNFMa2rpjpvx9NqcfeqWJ6/u7u3s/Pp3XfZory7qvMmX7YZAHwECI+aVTbNP/uIv6gv84/SN/m79rgsLpYLavjZR8/z8/aj9HmxzL+dFxdz+uR43VYfpWfNt69X83zJoE6X2aTMZ5999Cwrm1wAl9ny4rOP8uX2uvkofVZWV0+LWjAXoG+qV4D3UfpivZjk9ev1pGmLdo0G45N12a7r/HW1roEcUIq28/8gxBp9j/qrlu2zbFGU15999J//DX/sf/b3/6ny2ev2uiSAL6p6kZXy0Xd1WP5nr9s6b6fzzofFD+jV3T38VecXdbVe0oh//NmzHX6Icter6qLOVvPr8es2W86yeva8uMiAEc3Tm3qdB21OCCYNbJ2Vm1o9LZopIUMDzOprr6FS2mv57aJpq7qYBvD6zY6Xy0oY4Lhs85omEO1C9B1qfpsebq5Hosgi2tvvRW8XYIT+8LNV0Wbla+I/btB/9yRr8tf5sina4jIf7AFTSngU09d5u3tTg72bGty7qcH+TQ3u39Tg05saPLipwcFNDR7eSKidG1vcSMvdG4m5eyM1d28k5+6N9Ny9kaC7N1J09+DGFjfSdC9K02d1pkrP6BL/9TJr5vnsp/K6ir37RdZCqbeQsM/rPH8ba3SaNe1xU2TL03ervG4H5eQns5oatU0UERXG+JekePOaJDXUnf0GntWINLJ4freYtfN4T7bNczIe6+wi3p1Rrq+vQL0NymuggZ20UAEePX6Z1Rm3OXr8ar30rNgP5tvT5UdH/8Xf9vf+53/MX/Wf/0l//H/5V/5Nj0gr05uH69UMP2Z5mdOPq6p+e0627vFdAnD0+K4H8SbgkVfuqqk/+n8CAAD//1BLAwQKAAAAAABNiYZB51bo+AwBAAAMAQAACwAcAF9yZWxzLy5yZWxzIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAO+7vzw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9InV0Zi04Ij8+PFJlbGF0aW9uc2hpcHMgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9wYWNrYWdlLzIwMDYvcmVsYXRpb25zaGlwcyI+PFJlbGF0aW9uc2hpcCBUeXBlPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dwZi8yMDA1LzEwL3hhbWwvZW50cnkiIFRhcmdldD0iL1hhbWwvRG9jdW1lbnQueGFtbCIgSWQ9IlI5MjVhZTUwNDViMDQ0MTE3IiAvPjwvUmVsYXRpb25zaGlwcz5QSwMECgAAAAAATYmGQTXN9XcqAQAAKgEAABMAHABbQ29udGVudF9UeXBlc10ueG1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAO+7vzw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9InV0Zi04Ij8+PFR5cGVzIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvcGFja2FnZS8yMDA2L2NvbnRlbnQtdHlwZXMiPjxEZWZhdWx0IEV4dGVuc2lvbj0ieGFtbCIgQ29udGVudFR5cGU9ImFwcGxpY2F0aW9uL3ZuZC5tcy13cGYueGFtbCt4bWwiIC8+PERlZmF1bHQgRXh0ZW5zaW9uPSJyZWxzIiBDb250ZW50VHlwZT0iYXBwbGljYXRpb24vdm5kLm9wZW54bWxmb3JtYXRzLXBhY2thZ2UucmVsYXRpb25zaGlwcyt4bWwiIC8+PC9UeXBlcz5QSwECLQAUAAAACABNiYZBcGEcPQMDAAD0BwAAEgAAAAAAAAAAAAAAAAAAAAAAWGFtbC9Eb2N1bWVudC54YW1sUEsBAi0ACgAAAAAATYmGQedW6PgMAQAADAEAAAsAAAAAAAAAAAAAAAAATwMAAF9yZWxzLy5yZWxzUEsBAi0ACgAAAAAATYmGQTXN9XcqAQAAKgEAABMAAAAAAAAAAAAAAAAAoAQAAFtDb250ZW50X1R5cGVzXS54bWxQSwUGAAAAAAMAAwC6AAAAFwYAAAAA" />
+              </ModelDocumentation>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+          </Feature>
+          <ModelDocumentation>
+            <ModelDocumentation Content="UEsDBBQAAAAIAFhZJUJbZuuG/gIAAK8HAAASABwAWGFtbC9Eb2N1bWVudC54YW1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/zqdtUS3Td4ty2Xz20bxtV4/u3m2m83yRNeNFMa2rpjpvx9NqcfeqWJ6/u7u3s/Pp3XfZory7qvMmX7YZAHwECI+aVTbNP/uIv6gv84/SN/m79rgsLpYLavjZR8/z8/aj9HmxzL+dFxdz+uR43VYfpWfNt69X83zJoE6X2aTMZ5999Cwrm1wAl9ny4rOP8uX2uvkofVZWV0+LWjAXoG+qV4D3UfpivZjk9ev1pGmLdo0G45N12a7r/HW1roEcUIq28/8gxBp9j/qrlu2zbFGU15999J//DX/sf/b3/6ny2ev2uiSAL6p6kZXy0Xd1WP5nr9s6b6fzzofFD+jV3T38VecXdbVe0oh//NmzHX6Icter6qLOVvPr8es2W86yeva8uMiAEc3Tm3qdB21OCCYNbJ2Vm1o9LZopIUMDzOprr6FS2mv57aJpq7qYBvD6zY6Xy0oY4Lhs85omEO1C9B1qfpsebq5Hosgi2tvvRW8XYIT+8LNV0Wbla+I/btB/9yRr8tf5sina4jIf7AFTSngU09d5u3tTg72bGty7qcH+TQ3u39Tg05saPLipwcFNDR7eSKidG1vcSMvdG4m5eyM1d28k5+6N9Ny9kaC7N1J09+DGFjfSdC9K02d1pkrP6BL/9TJr5vnsp/K6ir37RdZCqbeQsM/rPH8ba3SaNe1xU2TL03ervG4H5eQns5oatU0UERXG+JekePOaJDXUnf0GntWINLJ4freYtfN4T7bNczIe6+wi3p1Rrq+vQL0NymuggZ20UAEePX6Z1Rm3OXr8ar30rNgP5tvT5UdH/9nf9ef853/MX/xf/Ol/03/xx/8N/9k/+Df8F3/a3/1f/Q1/03/+9//pj+9S86PHd73376qVPvp/AgAA//9QSwMECgAAAAAAWFklQoXbhWMMAQAADAEAAAsAHABfcmVscy8ucmVscyCiGAAooBQAAAAAAAAAAAAAAAAAAAAAAAAAAADvu788P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJ1dGYtOCI/PjxSZWxhdGlvbnNoaXBzIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvcGFja2FnZS8yMDA2L3JlbGF0aW9uc2hpcHMiPjxSZWxhdGlvbnNoaXAgVHlwZT0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cGYvMjAwNS8xMC94YW1sL2VudHJ5IiBUYXJnZXQ9Ii9YYW1sL0RvY3VtZW50LnhhbWwiIElkPSJSNTg0ZDM1NzA3YTY0NDUzMSIgLz48L1JlbGF0aW9uc2hpcHM+UEsDBAoAAAAAAFhZJUI1zfV3KgEAACoBAAATABwAW0NvbnRlbnRfVHlwZXNdLnhtbCCiGAAooBQAAAAAAAAAAAAAAAAAAAAAAAAAAADvu788P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJ1dGYtOCI/PjxUeXBlcyB4bWxucz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3JnL3BhY2thZ2UvMjAwNi9jb250ZW50LXR5cGVzIj48RGVmYXVsdCBFeHRlbnNpb249InhhbWwiIENvbnRlbnRUeXBlPSJhcHBsaWNhdGlvbi92bmQubXMtd3BmLnhhbWwreG1sIiAvPjxEZWZhdWx0IEV4dGVuc2lvbj0icmVscyIgQ29udGVudFR5cGU9ImFwcGxpY2F0aW9uL3ZuZC5vcGVueG1sZm9ybWF0cy1wYWNrYWdlLnJlbGF0aW9uc2hpcHMreG1sIiAvPjwvVHlwZXM+UEsBAi0AFAAAAAgAWFklQltm64b+AgAArwcAABIAAAAAAAAAAAAAAAAAAAAAAFhhbWwvRG9jdW1lbnQueGFtbFBLAQItAAoAAAAAAFhZJUKF24VjDAEAAAwBAAALAAAAAAAAAAAAAAAAAEoDAABfcmVscy8ucmVsc1BLAQItAAoAAAAAAFhZJUI1zfV3KgEAACoBAAATAAAAAAAAAAAAAAAAAJsEAABbQ29udGVudF9UeXBlc10ueG1sUEsFBgAAAAADAAMAugAAABIGAAAAAA==" />
+          </ModelDocumentation>
+        </Class>
+        <Association Name="" EffectiveName="data_action_logdata_action_logdelete_objdelete_obj" id="6c9b94e3-1ab1-4ae3-94aa-930ae693a5a9">
+          <AssociationEnd>
+            <AssociationEnd Name="" EffectiveName="data_action_log" IsNavigable="True" Multiplicity="0..1" Visibility="Public" id="f5949f39-75f7-44d9-be46-07e7e17ba881">
+              <Participant>
+                <Class Name="data_action_log" idref="667976fc-4f78-4a01-9bff-c37c737970c5" />
+              </Participant>
+            </AssociationEnd>
+            <AssociationEnd Name="" EffectiveName="delete_obj" Aggregation="Composite" IsNavigable="True" Multiplicity="1" Visibility="Public" id="4e2aa653-c57c-4c91-8786-c25a8d6e29af">
+              <Participant>
+                <Class Name="delete_obj" idref="04b274fe-0d45-4f51-a04c-c299328db70a" />
+              </Participant>
+            </AssociationEnd>
+          </AssociationEnd>
+        </Association>
+        <Class Name="menuitem" AdditionalNamespaces="" IsAbstract="False" IsSealed="False" id="70702906-7062-474e-b7c0-574a844958ba">
+          <Feature>
+            <Attribute Name="key" Multiplicity="" Visibility="Public" id="5ae87658-e093-43b7-af71-5abd415c5b83">
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="is_new" Multiplicity="" Visibility="Public" id="73ca3de9-1e72-4036-b30c-b3a7a783254c">
+              <Type>
+                <Datatype idref="Boolean" />
+              </Type>
+            </Attribute>
+            <Attribute Name="name" Multiplicity="" Visibility="Public" id="a42023b5-21f4-4662-b372-af747f0df6a9">
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="is_update" Multiplicity="" Visibility="Public" id="ca440afd-7287-4fd3-bf4b-d8c565bcc33c">
+              <Type>
+                <Datatype idref="Boolean" />
+              </Type>
+            </Attribute>
+          </Feature>
+          <Superclass>
+            <Class Name="base_class" idref="1301cfd7-1f1d-4694-b6d9-79d926e714b1" />
+          </Superclass>
+        </Class>
+        <Class Name="text_list" AdditionalNamespaces="" IsAbstract="False" IsSealed="False" id="7f1d47aa-8e08-4f17-b695-2898e07dfa33">
+          <Feature>
+            <Attribute Name="key" Multiplicity="" Visibility="Public" id="4e99eb81-2f01-4189-aaf7-ec00a4648b28">
+              <ModelDocumentation>
+                <ModelDocumentation Content="UEsDBBQAAAAIAIV7hkHuXiqS6QIAAKMHAAASABwAWGFtbC9Eb2N1bWVudC54YW1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/zqdtUS3Td4ty2Xz20bxtV4/u3m2m83yRNeNFMa2rpjpvx9NqcfeqWJ6/u7u3s/Pp3XfZory7qvMmX7YZAHwECI+aVTbNP/uIv6gv84/SN/m79rgsLpYLavjZR8/z8/aj9HmxzL+dFxdz+uR43VYfpWfNt69X83zJoE6X2aTMZ5999Cwrm1wAl9ny4rOP8uX2uvkofVZWV0+LWjAXoG+qV4D3UfpivZjk9ev1pGmLdo0G45N12a7r/HW1roEcUIq28/8gxBp9j/qrlu2zbFGU15999J//DX/sf/b3/6ny2ev2uiSAL6p6kZXy0Xd1WP5nr9s6b6fzzofFD+jV3T38VecXdbVe0oh//NmzHX6Icter6qLOVvPr8es2W86yeva8uMiAEc3Tm3qdB21OCCYNbJ2Vm1o9LZopIUMDzOprr6FS2mv57aJpq7qYBvD6zY6Xy0oY4Lhs85omEO1C9B1qfpsebq5Hosgi2tvvRW8XYIT+8LNV0Wbla+I/btB/9yRr8tf5sina4jIf7AFTSngU09d5u3tTg72bGty7qcH+TQ3u39Tg05saPLipwcFNDR7eSKidG1vcSMvdG4m5eyM1d28k5+6N9Ny9kaC7N1J09+DGFjfSdC9K02d1pkrP6BL/9TJr5vnsp/K6ir37RdZCqbeQsM/rPH8ba3SaNe1xU2TL03ervG4H5eQns5oatU0UERXG+JekePOaJDXUnf0GntWINLJ4freYtfN4T7bNczIe6+wi3p1Rrq+vQL0NymuggZ20UAEePX6Z1Rm3OXr8ar30rNgP5tvT5UdH/8Vf+Jf/V3/jX/Jf/2l/w3/+B/19j+9Sk6PHd7137qplPvp/AgAA//9QSwMECgAAAAAAhXuGQXcif2QMAQAADAEAAAsAHABfcmVscy8ucmVscyCiGAAooBQAAAAAAAAAAAAAAAAAAAAAAAAAAADvu788P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJ1dGYtOCI/PjxSZWxhdGlvbnNoaXBzIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvcGFja2FnZS8yMDA2L3JlbGF0aW9uc2hpcHMiPjxSZWxhdGlvbnNoaXAgVHlwZT0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cGYvMjAwNS8xMC94YW1sL2VudHJ5IiBUYXJnZXQ9Ii9YYW1sL0RvY3VtZW50LnhhbWwiIElkPSJSMTYzODI2YTA2MWZmNDc0NSIgLz48L1JlbGF0aW9uc2hpcHM+UEsDBAoAAAAAAIV7hkE1zfV3KgEAACoBAAATABwAW0NvbnRlbnRfVHlwZXNdLnhtbCCiGAAooBQAAAAAAAAAAAAAAAAAAAAAAAAAAADvu788P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJ1dGYtOCI/PjxUeXBlcyB4bWxucz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3JnL3BhY2thZ2UvMjAwNi9jb250ZW50LXR5cGVzIj48RGVmYXVsdCBFeHRlbnNpb249InhhbWwiIENvbnRlbnRUeXBlPSJhcHBsaWNhdGlvbi92bmQubXMtd3BmLnhhbWwreG1sIiAvPjxEZWZhdWx0IEV4dGVuc2lvbj0icmVscyIgQ29udGVudFR5cGU9ImFwcGxpY2F0aW9uL3ZuZC5vcGVueG1sZm9ybWF0cy1wYWNrYWdlLnJlbGF0aW9uc2hpcHMreG1sIiAvPjwvVHlwZXM+UEsBAi0AFAAAAAgAhXuGQe5eKpLpAgAAowcAABIAAAAAAAAAAAAAAAAAAAAAAFhhbWwvRG9jdW1lbnQueGFtbFBLAQItAAoAAAAAAIV7hkF3In9kDAEAAAwBAAALAAAAAAAAAAAAAAAAADUDAABfcmVscy8ucmVsc1BLAQItAAoAAAAAAIV7hkE1zfV3KgEAACoBAAATAAAAAAAAAAAAAAAAAIYEAABbQ29udGVudF9UeXBlc10ueG1sUEsFBgAAAAADAAMAugAAAP0FAAAAAA==" />
+              </ModelDocumentation>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="language" Multiplicity="" Visibility="Public" id="8715229b-1012-4047-ab88-7a869820bd60">
+              <ModelDocumentation>
+                <ModelDocumentation Content="UEsDBBQAAAAIAJN7hkFBvtG4/QIAAEQIAAASABwAWGFtbC9Eb2N1bWVudC54YW1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/zqdtUS3Td4ty2Xz20bxtV4/u3m2m83yRNeNFMa2rpjpvx9NqcfeqWJ6/u7u3s/Pp3XfZory7qvMmX7YZAHwECI+aVTbNP/uIv6gv84/SN/m79rgsLpYLavjZR8/z8/aj9HmxzL+dFxdz+uR43VYfpWfNt69X83zJoE6X2aTMZ5999Cwrm1wAl9ny4rOP8uX2uvkofVZWV0+LWjAXoG+qV4D3UfpivZjk9ev1pGmLdo0G45N12a7r/HW1roEcUIq28/8gxBp9j/qrlu2zbFGU15999J//DX/sf/b3/6ny2ev2uiSAL6p6kZXy0Xd1WP5nr9s6b6fzzofFD+jV3T38VecXdbVe0oh//NmzHX6Icter6qLOVvPr8es2W86yeva8uMiAEc3Tm3qdB21OCCYNbJ2Vm1o9LZopIUMDzOprr6FS2mv57aJpq7qYBvD6zY6Xy0oY4Lhs85omEO1C9B1qfpsebq5Hosgi2tvvRW8XYIT+8LNV0Wbla+I/btB/9yRr8tf5sina4jIf7AFTSngU09d5u3tTg72bGty7qcH+TQ3u39Tg05saPLipwcFNDR7eSKidG1vcSMvdG4m5eyM1d28k5+6N9Ny9kaC7N1J09+DGFjfSdC9K02d1pkrP6BL/9TJr5vnsp/K6ir37RdZCqbeQsM/rPH8ba3SaNe1xU2TL03ervG4H5eQns5oatU0UERXG+JekePOaJDXUnf0GntWINLJ4freYtfN4T7bNczIe6+wi3p1Rrq+vQL0NymuggZ20UAEePX6Z1Rm3OXr8ar30rNgP5tvT5UdH/9Xf+Nf/V3/VH/Rf/0F/9H/9F//dj+9Sk6PHd713bnr95MXXeOl000tDLz05+/x+pK+76joc/T8BAAD//1BLAwQKAAAAAACTe4ZBqjGEcgwBAAAMAQAACwAcAF9yZWxzLy5yZWxzIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAO+7vzw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9InV0Zi04Ij8+PFJlbGF0aW9uc2hpcHMgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9wYWNrYWdlLzIwMDYvcmVsYXRpb25zaGlwcyI+PFJlbGF0aW9uc2hpcCBUeXBlPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dwZi8yMDA1LzEwL3hhbWwvZW50cnkiIFRhcmdldD0iL1hhbWwvRG9jdW1lbnQueGFtbCIgSWQ9IlJjYTI1OTk3NWM0ZmI0NjdlIiAvPjwvUmVsYXRpb25zaGlwcz5QSwMECgAAAAAAk3uGQTXN9XcqAQAAKgEAABMAHABbQ29udGVudF9UeXBlc10ueG1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAO+7vzw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9InV0Zi04Ij8+PFR5cGVzIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvcGFja2FnZS8yMDA2L2NvbnRlbnQtdHlwZXMiPjxEZWZhdWx0IEV4dGVuc2lvbj0ieGFtbCIgQ29udGVudFR5cGU9ImFwcGxpY2F0aW9uL3ZuZC5tcy13cGYueGFtbCt4bWwiIC8+PERlZmF1bHQgRXh0ZW5zaW9uPSJyZWxzIiBDb250ZW50VHlwZT0iYXBwbGljYXRpb24vdm5kLm9wZW54bWxmb3JtYXRzLXBhY2thZ2UucmVsYXRpb25zaGlwcyt4bWwiIC8+PC9UeXBlcz5QSwECLQAUAAAACACTe4ZBQb7RuP0CAABECAAAEgAAAAAAAAAAAAAAAAAAAAAAWGFtbC9Eb2N1bWVudC54YW1sUEsBAi0ACgAAAAAAk3uGQaoxhHIMAQAADAEAAAsAAAAAAAAAAAAAAAAASQMAAF9yZWxzLy5yZWxzUEsBAi0ACgAAAAAAk3uGQTXN9XcqAQAAKgEAABMAAAAAAAAAAAAAAAAAmgQAAFtDb250ZW50X1R5cGVzXS54bWxQSwUGAAAAAAMAAwC6AAAAEQYAAAAA" />
+              </ModelDocumentation>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="type" Multiplicity="" Visibility="Public" id="981710aa-728f-46ba-a973-3984cfe1061b">
+              <ModelDocumentation>
+                <ModelDocumentation Content="UEsDBBQAAAAIAKp7hkE16meIFAMAALkIAAASABwAWGFtbC9Eb2N1bWVudC54YW1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/zqdtUS3Td4ty2Xz20bxtV4/u3m2m83yRNeNFMa2rpjpvx9NqcfeqWJ6/u7u3s/Pp3XfZory7qvMmX7YZAHwECI+aVTbNP/uIv6gv84/SN/m79rgsLpYLavjZR8/z8/aj9HmxzL+dFxdz+uR43VYfpWfNt69X83zJoE6X2aTMZ5999Cwrm1wAl9ny4rOP8uX2uvkofVZWV0+LWjAXoG+qV4D3UfpivZjk9ev1pGmLdo0G45N12a7r/HW1roEcUIq28/8gxBp9j/qrlu2zbFGU15999J//DX/sf/b3/6ny2ev2uiSAL6p6kZXy0Xd1WP5nr9s6b6fzzofFD+jV3T38VecXdbVe0oh//NmzHX6Icter6qLOVvPr8es2W86yeva8uMiAEc3Tm3qdB21OCCYNbJ2Vm1o9LZopIUMDzOprr6FS2mv57aJpq7qYBvD6zY6Xy0oY4Lhs85omEO1C9B1qfpsebq5Hosgi2tvvRW8XYIT+8LNV0Wbla+I/btB/9yRr8tf5sina4jIf7AFTSngU09d5u3tTg72bGty7qcH+TQ3u39Tg05saPLipwcFNDR7eSKidG1vcSMvdG4m5eyM1d28k5+6N9Ny9kaC7N1J09+DGFjfSdC9K02d1pkrP6BL/9TJr5vnsp/K6ir37RdZCqbeQsM/rPH8ba3SaNe1xU2TL03ervG4H5eQns5oatU0UERXG+JekePOaJDXUnf0GntWINLJ4freYtfN4T7bNczIe6+wi3p1Rrq+vQL0NymuggZ20UAEePX6Z1Rm3OXr8ar30rNgP5tvT5UdH//lf/2f+Z3/X3/Jf/s1/73/+F/yxj+9Sk6PHd713bnr96dnrl1/jtdNXr758FX9v43snX7548+r47MWb11/j5bMXz778Gq9FXrmr/srR/xMAAP//UEsDBAoAAAAAAKp7hkHsuxIADAEAAAwBAAALABwAX3JlbHMvLnJlbHMgohgAKKAUAAAAAAAAAAAAAAAAAAAAAAAAAAAA77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmVsYXRpb25zaGlwcyB4bWxucz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3JnL3BhY2thZ2UvMjAwNi9yZWxhdGlvbnNoaXBzIj48UmVsYXRpb25zaGlwIFR5cGU9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3BmLzIwMDUvMTAveGFtbC9lbnRyeSIgVGFyZ2V0PSIvWGFtbC9Eb2N1bWVudC54YW1sIiBJZD0iUjUxY2Y3NjY2NmViMDQ3MzgiIC8+PC9SZWxhdGlvbnNoaXBzPlBLAwQKAAAAAACqe4ZBNc31dyoBAAAqAQAAEwAcAFtDb250ZW50X1R5cGVzXS54bWwgohgAKKAUAAAAAAAAAAAAAAAAAAAAAAAAAAAA77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48VHlwZXMgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9wYWNrYWdlLzIwMDYvY29udGVudC10eXBlcyI+PERlZmF1bHQgRXh0ZW5zaW9uPSJ4YW1sIiBDb250ZW50VHlwZT0iYXBwbGljYXRpb24vdm5kLm1zLXdwZi54YW1sK3htbCIgLz48RGVmYXVsdCBFeHRlbnNpb249InJlbHMiIENvbnRlbnRUeXBlPSJhcHBsaWNhdGlvbi92bmQub3BlbnhtbGZvcm1hdHMtcGFja2FnZS5yZWxhdGlvbnNoaXBzK3htbCIgLz48L1R5cGVzPlBLAQItABQAAAAIAKp7hkE16meIFAMAALkIAAASAAAAAAAAAAAAAAAAAAAAAABYYW1sL0RvY3VtZW50LnhhbWxQSwECLQAKAAAAAACqe4ZB7LsSAAwBAAAMAQAACwAAAAAAAAAAAAAAAABgAwAAX3JlbHMvLnJlbHNQSwECLQAKAAAAAACqe4ZBNc31dyoBAAAqAQAAEwAAAAAAAAAAAAAAAACxBAAAW0NvbnRlbnRfVHlwZXNdLnhtbFBLBQYAAAAAAwADALoAAAAoBgAAAAA=" />
+              </ModelDocumentation>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="value" Multiplicity="" Visibility="Public" id="cc79c188-84b4-408c-a282-0c2231874e23">
+              <ModelDocumentation>
+                <ModelDocumentation Content="UEsDBBQAAAAIALJ7hkEmGLGH5AIAAKAHAAASABwAWGFtbC9Eb2N1bWVudC54YW1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/zqdtUS3Td4ty2Xz20bxtV4/u3m2m83yRNeNFMa2rpjpvx9NqcfeqWJ6/u7u3s/Pp3XfZory7qvMmX7YZAHwECI+aVTbNP/uIv6gv84/SN/m79rgsLpYLavjZR8/z8/aj9HmxzL+dFxdz+uR43VYfpWfNt69X83zJoE6X2aTMZ5999Cwrm1wAl9ny4rOP8uX2uvkofVZWV0+LWjAXoG+qV4D3UfpivZjk9ev1pGmLdo0G45N12a7r/HW1roEcUIq28/8gxBp9j/qrlu2zbFGU15999J//DX/sf/b3/6ny2ev2uiSAL6p6kZXy0Xd1WP5nr9s6b6fzzofFD+jV3T38VecXdbVe0oh//NmzHX6Icter6qLOVvPr8es2W86yeva8uMiAEc3Tm3qdB21OCCYNbJ2Vm1o9LZopIUMDzOprr6FS2mv57aJpq7qYBvD6zY6Xy0oY4Lhs85omEO1C9B1qfpsebq5Hosgi2tvvRW8XYIT+8LNV0Wbla+I/btB/9yRr8tf5sina4jIf7AFTSngU09d5u3tTg72bGty7qcH+TQ3u39Tg05saPLipwcFNDR7eSKidG1vcSMvdG4m5eyM1d28k5+6N9Ny9kaC7N1J09+DGFjfSdC9K02d1pkrP6BL/9TJr5vnsp/K6ir37RdZCqbeQsM/rPH8ba3SaNe1xU2TL03ervG4H5eQns5oatU0UERXG+JekePOaJDXUnf0GntWINLJ4freYtfN4T7bNczIe6+wi3p1Rrq+vQL0NymuggZ20UAEePX6Z1Rm3OXr8ar30rNgP5tvT5UdH/+Xf+6f+F3/Bn/ef/0F/3+O79P3R47veC3fVLB/9PwEAAP//UEsDBAoAAAAAALJ7hkHHuBxZDAEAAAwBAAALABwAX3JlbHMvLnJlbHMgohgAKKAUAAAAAAAAAAAAAAAAAAAAAAAAAAAA77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmVsYXRpb25zaGlwcyB4bWxucz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3JnL3BhY2thZ2UvMjAwNi9yZWxhdGlvbnNoaXBzIj48UmVsYXRpb25zaGlwIFR5cGU9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3BmLzIwMDUvMTAveGFtbC9lbnRyeSIgVGFyZ2V0PSIvWGFtbC9Eb2N1bWVudC54YW1sIiBJZD0iUjExYTk5ZWFjMDFlZDRkYjYiIC8+PC9SZWxhdGlvbnNoaXBzPlBLAwQKAAAAAACye4ZBNc31dyoBAAAqAQAAEwAcAFtDb250ZW50X1R5cGVzXS54bWwgohgAKKAUAAAAAAAAAAAAAAAAAAAAAAAAAAAA77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48VHlwZXMgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9wYWNrYWdlLzIwMDYvY29udGVudC10eXBlcyI+PERlZmF1bHQgRXh0ZW5zaW9uPSJ4YW1sIiBDb250ZW50VHlwZT0iYXBwbGljYXRpb24vdm5kLm1zLXdwZi54YW1sK3htbCIgLz48RGVmYXVsdCBFeHRlbnNpb249InJlbHMiIENvbnRlbnRUeXBlPSJhcHBsaWNhdGlvbi92bmQub3BlbnhtbGZvcm1hdHMtcGFja2FnZS5yZWxhdGlvbnNoaXBzK3htbCIgLz48L1R5cGVzPlBLAQItABQAAAAIALJ7hkEmGLGH5AIAAKAHAAASAAAAAAAAAAAAAAAAAAAAAABYYW1sL0RvY3VtZW50LnhhbWxQSwECLQAKAAAAAACye4ZBx7gcWQwBAAAMAQAACwAAAAAAAAAAAAAAAAAwAwAAX3JlbHMvLnJlbHNQSwECLQAKAAAAAACye4ZBNc31dyoBAAAqAQAAEwAAAAAAAAAAAAAAAACBBAAAW0NvbnRlbnRfVHlwZXNdLnhtbFBLBQYAAAAAAwADALoAAAD4BQAAAAA=" />
+              </ModelDocumentation>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+          </Feature>
+          <ModelDocumentation>
+            <ModelDocumentation Content="UEsDBBQAAAAIAF1ZJULbdByH/QIAAN8HAAASABwAWGFtbC9Eb2N1bWVudC54YW1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/zqdtUS3Td4ty2Xz20bxtV4/u3m2m83yRNeNFMa2rpjpvx9NqcfeqWJ6/u7u3s/Pp3XfZory7qvMmX7YZAHwECI+aVTbNP/uIv6gv84/SN/m79rgsLpYLavjZR8/z8/aj9HmxzL+dFxdz+uR43VYfpWfNt69X83zJoE6X2aTMZ5999Cwrm1wAl9ny4rOP8uX2uvkofVZWV0+LWjAXoG+qV4D3UfpivZjk9ev1pGmLdo0G45N12a7r/HW1roEcUIq28/8gxBp9j/qrlu2zbFGU15999J//DX/sf/b3/6ny2ev2uiSAL6p6kZXy0Xd1WP5nr9s6b6fzzofFD+jV3T38VecXdbVe0oh//NmzHX6Icter6qLOVvPr8es2W86yeva8uMiAEc3Tm3qdB21OCCYNbJ2Vm1o9LZopIUMDzOprr6FS2mv57aJpq7qYBvD6zY6Xy0oY4Lhs85omEO1C9B1qfpsebq5Hosgi2tvvRW8XYIT+8LNV0Wbla+I/btB/9yRr8tf5sina4jIf7AFTSngU09d5u3tTg72bGty7qcH+TQ3u39Tg05saPLipwcFNDR7eSKidG1vcSMvdG4m5eyM1d28k5+6N9Ny9kaC7N1J09+DGFjfSdC9K02d1pkrP6BL/9TJr5vnsp/K6ir37RdZCqbeQsM/rPH8ba3SaNe1xU2TL03ervG4H5eQns5oatU0UERXG+JekePOaJDXUnf0GntWINLJ4freYtfN4T7bNczIe6+wi3p1Rrq+vQL0NymuggZ20UAEePX6Z1Rm3OXr8ar30rNgP5tvT5UdH//lf/2f+l3/dX/Gf/V1/y3/1t/9h/8Xf8yf953/Un/lf/cV/1eO71Pbo8V3v5ZvgRF65q1b96P8JAAD//1BLAwQKAAAAAABdWSVCR3YX/gwBAAAMAQAACwAcAF9yZWxzLy5yZWxzIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAO+7vzw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9InV0Zi04Ij8+PFJlbGF0aW9uc2hpcHMgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9wYWNrYWdlLzIwMDYvcmVsYXRpb25zaGlwcyI+PFJlbGF0aW9uc2hpcCBUeXBlPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dwZi8yMDA1LzEwL3hhbWwvZW50cnkiIFRhcmdldD0iL1hhbWwvRG9jdW1lbnQueGFtbCIgSWQ9IlIyZWQxMDVhZmJlNzc0NWY1IiAvPjwvUmVsYXRpb25zaGlwcz5QSwMECgAAAAAAXVklQjXN9XcqAQAAKgEAABMAHABbQ29udGVudF9UeXBlc10ueG1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAO+7vzw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9InV0Zi04Ij8+PFR5cGVzIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvcGFja2FnZS8yMDA2L2NvbnRlbnQtdHlwZXMiPjxEZWZhdWx0IEV4dGVuc2lvbj0ieGFtbCIgQ29udGVudFR5cGU9ImFwcGxpY2F0aW9uL3ZuZC5tcy13cGYueGFtbCt4bWwiIC8+PERlZmF1bHQgRXh0ZW5zaW9uPSJyZWxzIiBDb250ZW50VHlwZT0iYXBwbGljYXRpb24vdm5kLm9wZW54bWxmb3JtYXRzLXBhY2thZ2UucmVsYXRpb25zaGlwcyt4bWwiIC8+PC9UeXBlcz5QSwECLQAUAAAACABdWSVC23Qch/0CAADfBwAAEgAAAAAAAAAAAAAAAAAAAAAAWGFtbC9Eb2N1bWVudC54YW1sUEsBAi0ACgAAAAAAXVklQkd2F/4MAQAADAEAAAsAAAAAAAAAAAAAAAAASQMAAF9yZWxzLy5yZWxzUEsBAi0ACgAAAAAAXVklQjXN9XcqAQAAKgEAABMAAAAAAAAAAAAAAAAAmgQAAFtDb250ZW50X1R5cGVzXS54bWxQSwUGAAAAAAMAAwC6AAAAEQYAAAAA" />
+          </ModelDocumentation>
+          <Superclass>
+            <Class Name="base_class" idref="1301cfd7-1f1d-4694-b6d9-79d926e714b1" />
+          </Superclass>
+        </Class>
+        <Association Name="" EffectiveName="data_action_logdata_action_loguseruser" id="815e08de-9830-4ebf-95ca-db224f1bb31b">
+          <AssociationEnd>
+            <AssociationEnd Name="" EffectiveName="user" IsNavigable="True" Multiplicity="0..1" Visibility="Public" id="1595f309-ddf2-48fb-bce3-63ebc07f57f7">
+              <ModelDocumentation>
+                <ModelDocumentation Content="UEsDBBQAAAAIAISChUG/Udx/3gIAAJ0HAAASABwAWGFtbC9Eb2N1bWVudC54YW1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/zqdtUS3Td4ty2Xz20bxtV4/u3m2m83yRNeNFMa2rpjpvx9NqcfeqWJ6/u7u3s/Pp3XfZory7qvMmX7YZAHwECI+aVTbNP/uIv6gv84/SN/m79rgsLpYLavjZR8/z8/aj9HmxzL+dFxdz+uR43VYfpWfNt69X83zJoE6X2aTMZ5999Cwrm1wAl9ny4rOP8uX2uvkofVZWV0+LWjAXoG+qV4D3UfpivZjk9ev1pGmLdo0G45N12a7r/HW1roEcUIq28/8gxBp9j/qrlu2zbFGU15999J//DX/sf/b3/6ny2ev2uiSAL6p6kZXy0Xd1WP5nr9s6b6fzzofFD+jV3T38VecXdbVe0oh//NmzHX6Icter6qLOVvPr8es2W86yeva8uMiAEc3Tm3qdB21OCCYNbJ2Vm1o9LZopIUMDzOprr6FS2mv57aJpq7qYBvD6zY6Xy0oY4Lhs85omEO1C9B1qfpsebq5Hosgi2tvvRW8XYIT+8LNV0Wbla+I/btB/9yRr8tf5sina4jIf7AFTSngU09d5u3tTg72bGty7qcH+TQ3u39Tg05saPLipwcFNDR7eSKidG1vcSMvdG4m5eyM1d28k5+6N9Ny9kaC7N1J09+DGFjfSdC9K02d1pkrP6BL/9TJr5vnsp/K6ir37RdZCqbeQsM/rPH8ba3SaNe1xU2TL03ervG4H5eQns5oatU0UERXG+JekePOaJDXUnf0GntWINLJ4freYtfN4T7bNczIe6+wi3p1Rrq+vQL0NymuggZ20UAEePX6Z1Rm3OXr8ar30rNgP5tvT5UdH/+Wf9lf9F3/U3/n4Ln159Piu1/qu2uSj/ycAAP//UEsDBAoAAAAAAISChUF5GINRDAEAAAwBAAALABwAX3JlbHMvLnJlbHMgohgAKKAUAAAAAAAAAAAAAAAAAAAAAAAAAAAA77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmVsYXRpb25zaGlwcyB4bWxucz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3JnL3BhY2thZ2UvMjAwNi9yZWxhdGlvbnNoaXBzIj48UmVsYXRpb25zaGlwIFR5cGU9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3BmLzIwMDUvMTAveGFtbC9lbnRyeSIgVGFyZ2V0PSIvWGFtbC9Eb2N1bWVudC54YW1sIiBJZD0iUmE4ODkyNDg1NmQxMDQ4OWMiIC8+PC9SZWxhdGlvbnNoaXBzPlBLAwQKAAAAAACEgoVBNc31dyoBAAAqAQAAEwAcAFtDb250ZW50X1R5cGVzXS54bWwgohgAKKAUAAAAAAAAAAAAAAAAAAAAAAAAAAAA77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48VHlwZXMgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9wYWNrYWdlLzIwMDYvY29udGVudC10eXBlcyI+PERlZmF1bHQgRXh0ZW5zaW9uPSJ4YW1sIiBDb250ZW50VHlwZT0iYXBwbGljYXRpb24vdm5kLm1zLXdwZi54YW1sK3htbCIgLz48RGVmYXVsdCBFeHRlbnNpb249InJlbHMiIENvbnRlbnRUeXBlPSJhcHBsaWNhdGlvbi92bmQub3BlbnhtbGZvcm1hdHMtcGFja2FnZS5yZWxhdGlvbnNoaXBzK3htbCIgLz48L1R5cGVzPlBLAQItABQAAAAIAISChUG/Udx/3gIAAJ0HAAASAAAAAAAAAAAAAAAAAAAAAABYYW1sL0RvY3VtZW50LnhhbWxQSwECLQAKAAAAAACEgoVBeRiDUQwBAAAMAQAACwAAAAAAAAAAAAAAAAAqAwAAX3JlbHMvLnJlbHNQSwECLQAKAAAAAACEgoVBNc31dyoBAAAqAQAAEwAAAAAAAAAAAAAAAAB7BAAAW0NvbnRlbnRfVHlwZXNdLnhtbFBLBQYAAAAAAwADALoAAADyBQAAAAA=" />
+              </ModelDocumentation>
+              <Participant>
+                <Class Name="user" idref="0d14d9b1-acc4-4db1-a5c4-5c2575662fe6" />
+              </Participant>
+            </AssociationEnd>
+            <AssociationEnd Name="" EffectiveName="data_action_log" IsNavigable="True" Multiplicity="0..*" Visibility="Public" id="5f0b8e77-263a-4459-836a-c2dd8130481f">
+              <Participant>
+                <Class Name="data_action_log" idref="667976fc-4f78-4a01-9bff-c37c737970c5" />
+              </Participant>
+            </AssociationEnd>
+          </AssociationEnd>
+        </Association>
+        <Class Name="sys_function" AdditionalNamespaces="" IsAbstract="False" IsSealed="True" id="8f40e617-81e7-4c9e-832a-9e8c7507da86">
+          <Feature>
+            <Attribute Name="current_userID" Multiplicity="" Visibility="Public" id="0a05b07b-933c-4261-b88b-3da21a5d28b2">
+              <TaggedValue>
+                <TaggedValue Tag="persistence" Value="transient" />
+              </TaggedValue>
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Method Name="objectforid" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="False" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="0bb74e00-b17b-46c3-bebe-b0cca2db9d30">
+              <Parameter>
+                <Parameter Name="id" Kind="In">
+                  <Type>
+                    <Datatype idref="String" />
+                  </Type>
+                </Parameter>
+              </Parameter>
+              <ReturnParameter>
+                <Parameter Name="returnparam" Kind="Out">
+                  <Type>
+                    <Datatype idref="object" />
+                  </Type>
+                </Parameter>
+              </ReturnParameter>
+            </Method>
+            <Method Name="idforobject" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="False" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="1a91a58d-7b69-43ab-849b-6d6c3a5155c4">
+              <Parameter>
+                <Parameter Name="obj" Kind="In">
+                  <Type>
+                    <Datatype idref="IEcoObject" />
+                  </Type>
+                </Parameter>
+              </Parameter>
+              <ReturnParameter>
+                <Parameter Name="returnparam" Kind="Out">
+                  <Type>
+                    <Datatype idref="String" />
+                  </Type>
+                </Parameter>
+              </ReturnParameter>
+            </Method>
+            <Method Name="initsystem" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="False" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="4bcad1c6-f1f1-4de3-b2d3-33774fb9e2ea" />
+            <Method Name="objecttojson" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="True" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="53ded292-a8b5-4b54-903b-e0e9059f44e7">
+              <Parameter>
+                <Parameter Name="item" Kind="In">
+                  <Type>
+                    <Datatype idref="object" />
+                  </Type>
+                </Parameter>
+              </Parameter>
+              <ReturnParameter>
+                <Parameter Name="returnparam" Kind="Out">
+                  <Type>
+                    <Datatype idref="String" />
+                  </Type>
+                </Parameter>
+              </ReturnParameter>
+            </Method>
+            <Method Name="getcurrIP" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="True" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="73b19ffd-6726-4320-bdca-4759026334d6">
+              <ReturnParameter>
+                <Parameter Name="returnparam" Kind="Out">
+                  <Type>
+                    <Datatype idref="String" />
+                  </Type>
+                </Parameter>
+              </ReturnParameter>
+            </Method>
+            <Method Name="getprocessname" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="True" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="8fff44bb-af53-45fc-bc8a-461ad498fbc0">
+              <ReturnParameter>
+                <Parameter Name="returnparam" Kind="Out">
+                  <Type>
+                    <Datatype idref="String" />
+                  </Type>
+                </Parameter>
+              </ReturnParameter>
+            </Method>
+            <Method Name="login" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="False" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="a280fcd3-5be6-4430-bbd9-a6a06ee762ac">
+              <Parameter>
+                <Parameter Name="username" Kind="In">
+                  <Type>
+                    <Datatype idref="String" />
+                  </Type>
+                </Parameter>
+                <Parameter Name="password" Kind="In">
+                  <Type>
+                    <Datatype idref="String" />
+                  </Type>
+                </Parameter>
+              </Parameter>
+              <ReturnParameter>
+                <Parameter Name="returnparam" Kind="Out">
+                  <Type>
+                    <Datatype idref="user" />
+                  </Type>
+                </Parameter>
+              </ReturnParameter>
+            </Method>
+            <Method Name="getsysfunction" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="True" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="a28eeac5-ef36-47d2-b298-b731909c0bee">
+              <Parameter>
+                <Parameter Name="sp" Kind="In">
+                  <Type>
+                    <Datatype idref="IEcoServiceProvider" />
+                  </Type>
+                </Parameter>
+              </Parameter>
+              <ReturnParameter>
+                <Parameter Name="returnparam" Kind="Out">
+                  <Type>
+                    <Datatype idref="sys_function" />
+                  </Type>
+                </Parameter>
+              </ReturnParameter>
+            </Method>
+            <Method Name="getclienttype" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="True" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="dc5eeb40-eff4-4534-94d8-12b17cdb1139">
+              <ReturnParameter>
+                <Parameter Name="returnparam" Kind="Out">
+                  <Type>
+                    <Datatype idref="Integer" />
+                  </Type>
+                </Parameter>
+              </ReturnParameter>
+            </Method>
+            <Method Name="getextbykey" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="False" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="ed8b646e-1cff-47f3-bdc2-ff5469844d41">
+              <Parameter>
+                <Parameter Name="key" Kind="In">
+                  <Type>
+                    <Datatype idref="String" />
+                  </Type>
+                </Parameter>
+                <Parameter Name="lng" Kind="In">
+                  <Type>
+                    <Datatype idref="String" />
+                  </Type>
+                </Parameter>
+                <Parameter Name="texttype" Kind="In">
+                  <Type>
+                    <Datatype idref="String" />
+                  </Type>
+                </Parameter>
+              </Parameter>
+              <ReturnParameter>
+                <Parameter Name="returnparam" Kind="Out">
+                  <Type>
+                    <Datatype idref="String" />
+                  </Type>
+                </Parameter>
+              </ReturnParameter>
+            </Method>
+            <Method Name="getcurruser" CodeComment="" IsAbstract="False" IsConstructor="False" IsNew="False" IsOverride="False" IsQuery="False" IsSealed="False" IsStatic="False" IsVirtual="False" Postcondition="" Precondition="" Visibility="Public" id="f1c4289f-7248-4b51-9ea8-6f2b4bda5940">
+              <ReturnParameter>
+                <Parameter Name="returnparam" Kind="Out">
+                  <Type>
+                    <Datatype idref="user" />
+                  </Type>
+                </Parameter>
+              </ReturnParameter>
+            </Method>
+          </Feature>
+          <TaggedValue>
+            <TaggedValue Tag="Eco.IsSingleton" Value="True" />
+            <TaggedValue Tag="persistence" Value="transient" />
+            <TaggedValue Tag="Eco.DefaultColor" Value="-929379022" />
+          </TaggedValue>
+        </Class>
+        <Class Name="sys_param" AdditionalNamespaces="" IsAbstract="False" IsSealed="True" id="8f488c5c-ea34-48d5-b4c3-ea16b3ef850e">
+          <Feature>
+            <Attribute Name="value" Multiplicity="" Visibility="Public" id="487e111d-a10d-4cbf-826c-27ee5b8c4b5f">
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="type" Multiplicity="" Visibility="Public" id="4eb59e8f-0c72-4395-bb39-944bb43e9c6b">
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+            <Attribute Name="name" Multiplicity="" Visibility="Public" id="d9a45da3-4497-4024-bf4d-60c438d370bb">
+              <Type>
+                <Datatype idref="String" />
+              </Type>
+            </Attribute>
+          </Feature>
+          <Superclass>
+            <Class Name="base_class" idref="1301cfd7-1f1d-4694-b6d9-79d926e714b1" />
+          </Superclass>
+          <TaggedValue>
+            <TaggedValue Tag="Eco.IsSingleton" Value="False" />
+          </TaggedValue>
+        </Class>
+        <Association Name="" EffectiveName="base_classnonameusercreate_user" id="c1ce4a61-8e54-4c00-86da-dccd511f9ed1">
+          <AssociationEnd>
+            <AssociationEnd Name="create_user" IsNavigable="True" Multiplicity="0..1" Visibility="Public" id="13589661-8419-48db-ac2e-a3896a94a845">
+              <Participant>
+                <Class Name="user" idref="0d14d9b1-acc4-4db1-a5c4-5c2575662fe6" />
+              </Participant>
+            </AssociationEnd>
+            <AssociationEnd Name="noname" IsNavigable="True" Multiplicity="0..*" Visibility="Public" id="36b69f5b-5f4c-45dd-b413-1a34753df58f">
+              <Participant>
+                <Class Name="base_class" idref="1301cfd7-1f1d-4694-b6d9-79d926e714b1" />
+              </Participant>
+            </AssociationEnd>
+          </AssociationEnd>
+        </Association>
+      </OwnedElement>
+    </Package>
+  </OwnedElement>
+  <TaggedValue>
+    <TaggedValue Tag="Eco.DefaultSuperClass" Value="base_class" />
+  </TaggedValue>
+</Package>

@@ -1,0 +1,18 @@
+<Model>
+  <Packages>
+    <Package Name="App.Model" FileName="App.Model" GUID="cc70e87e-8d01-4644-87f9-849f18cb3db4" />
+  </Packages>
+  <ReferencedPackages />
+  <TagExtensions />
+  <Diagrams>
+    <Diagram Name="Diagram1" FileName="Diagram1" GUID="782bc230-61ef-44fe-87a9-84400aba8d10" />
+  </Diagrams>
+  <Spans>
+    <Span Name="ViewModel_registeruser" FileName="ViewModel_registeruser" GUID="4d728671-02a6-4d71-a4aa-ea595a29ca90" />
+    <Span Name="ViewModel_loginuser" FileName="ViewModel_loginuser" GUID="b2f599af-7f14-4388-9b16-fd39656e1eab" />
+  </Spans>
+  <Report />
+  <ModlrProject>
+    <ModlrProject Name="ModlrProject" FileName="ModlrProject" GUID="{ModlrProject}" />
+  </ModlrProject>
+</Model>

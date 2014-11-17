@@ -1,0 +1,86 @@
+﻿<div id="body">
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>Welcome to ASP.NET Web API!</h1>
+                <h2>Modify the code in this template to jump-start your ASP.NET Web API development.</h2>
+            </hgroup>
+            <p>
+                ASP.NET Web API allows you to expose your applications, data and services to the
+                web directly over HTTP.
+            </p>
+
+        </div>
+    </section>
+    <script type="text/javascript" src="~/Scripts/encodehtml.js"></script>
+    <section class="content-wrapper main-content clear-fix">
+        <script>
+            function setresult(data) {
+                $("#resultlarea").text(data);
+            }
+            function exce_apifunc() {
+               var html_str = $("#jstext").val();
+               var jsobj_fromstr = $.parseJSON(html_str);
+               var jsobj = {
+                   "url": "/api/values/getvalue/2",
+                   "type": "GET", "data": { "token": "" },
+                //   "success": function (data) { setresult(data) },
+                   "statusCode": {
+                       200 /*Created*/: function (data) {
+                           setresult(data)
+                       }, 401: function (jqXHR, textStatus, errorThrown) {
+                           setresult("401 error");
+                       }
+                   }
+               };
+               for (var item in jsobj_fromstr) {
+                   jsobj[item]=jsobj_fromstr[item]
+               }
+
+               $.ajax(jsobj);
+                //     $.ajax();
+
+            }
+           
+            function upfileclick()
+            {
+                    var formData = new FormData();
+                    var opmlFile = $('#filename')[0];
+                    for (var i = 0; i < opmlFile.files.length; i++) {
+                        console.log(i);
+                        formData.append("opmlFile" + i, opmlFile.files[i]);
+                    }
+                    $.ajax({
+                        url: '/api/UploadFile/PostFormData?token=nowtoken',
+                        type: 'POST',
+                        data: formData,
+                        cache: false,
+                        contentType: false,
+                        processData: false
+                    });
+                };
+            
+
+        </script>
+       @using (Html.BeginForm())
+       {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+    <textarea cols="40" rows="3" id="resultlarea"></textarea>
+    <br />
+        <textarea cols=40 rows=5 id="jstext">
+        {"url":"/api/values/getvalue/3",       "data":{"token":"newtoken"},       "type":"GET" }
+        </textarea>
+
+        <br />
+       
+        <button id="btn-test" onclick="javascript:exce_apifunc(); return false;">call api</button>
+           <button id="btn-login" onclick="javascript:exec_apilogin()">login</button>
+           <br />
+    <input name="file" type="file" multiple id="filename" />
+    <input type="button" id="Upload" value="Upload" onclick="javascript:upfileclick()" />
+           <br />
+           @Html.ActionLink("uploadfile", "uploadfile")
+       }
+    </section>
+</div>

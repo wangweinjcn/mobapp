@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModlrProjectValues AppCompleteCloudGuid="" AppCompleteCloudName="">
+  <ValueStoreForCodeGenAttribute Name="mvc_display" GenerateTag="*Mobapp.Model.FieldAttribute.C_DisplayName" GenerateValue="*Name=&quot;&quot;" />
+  <ValueStoreForCodeGenAttribute Name="mvc_stringlength" GenerateTag="*System.ComponentModel.DataAnnotations.StringLength" GenerateValue="*100,ErrorMessage=&quot;&quot;,MinimumLength=1" />
+  <ValueStoreForCodeGenAttribute Name="mvc_required" GenerateTag="*Mobapp.Model.FieldAttribute.Required" GenerateValue="*ErrorMessageID=&quot;&quot;" />
+</ModlrProjectValues>

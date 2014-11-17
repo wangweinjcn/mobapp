@@ -1,0 +1,94 @@
+namespace App.Model.project_struct
+{
+  using System;
+  using System.Collections;
+  using System.Collections.Generic;
+  using System.ComponentModel;
+  using System.CodeDom.Compiler;
+  using Eco.ObjectImplementation;
+  using Eco.ObjectRepresentation;
+  using Eco.Services;
+  using Eco.Subscription;
+  using Eco.UmlCodeAttributes;
+  using Eco.UmlRt;
+    using App.Model.comm;
+  
+  public partial class team_group {
+      [UmlElement(Id = "53dff205-5266-4b63-b31f-f728796c5441")]
+      public team_member addteammember(user tmpuser, roles tmprole)
+      {
+          if (tmpuser == null || tmprole == null)
+          {
+              return null;
+          }
+          if (haveuser(tmpuser))
+              return null;
+          team_member newtm;
+          newtm = new team_member(this.AsIObject().ServiceProvider);
+          newtm.user = tmpuser;
+          newtm.team = this.team;
+          this.team_member.Add(newtm);
+         // team_group_member_role tmpobj=new team_group_member_role(this.AsIObject().ServiceProvider);
+          
+         // newtm.team_group_member_role.roles = tmprole;
+          
+          return newtm;
+      }
+
+      [UmlElement(Id = "1c4ced01-f8a6-448a-8d56-ca244a3da367")]
+      public team_member addteammemberbyid(string userid, string roleid)
+      {
+          user tmpuser;
+          roles tmprole;
+          IExternalIdService ids = this.AsIObject().ServiceProvider.GetEcoService<IExternalIdService>();
+          tmpuser = ids.ObjectForId(userid).AsObject as user;
+          tmprole = ids.ObjectForId(roleid).AsObject as roles;
+          return addteammember(tmpuser, tmprole);
+      }
+
+      [UmlElement(Id = "539922eb-6eb5-41be-95bb-046be4093f3c")]
+      public void setleader(user leader)
+      {
+          if (haveuser(leader))
+              this.leader = leader;
+
+      }
+
+      [UmlElement(Id = "8917e1f4-2b04-4944-ab9f-bb232e13a3cf")]
+      public void setleaderbyid(string leaderid)
+      {
+          user tmpuser;
+
+          IExternalIdService ids = this.AsIObject().ServiceProvider.GetEcoService<IExternalIdService>();
+          tmpuser = ids.ObjectForId(leaderid).AsObject as user;
+          setleader(tmpuser);
+      }
+
+      [UmlElement(Id = "42a5618a-c4bc-4e51-baee-ddc3e05924cc")]
+      public bool haveuser(user tmpuser)
+      {
+          bool bresult = false;
+          string userid = this.AsIObject().ServiceProvider.GetEcoService<IExternalIdService>().IdForObject(tmpuser);
+          foreach (team_member tm in this.team_member)
+          {
+              if (tm.userid == userid)
+              {
+                  bresult = true;
+                  break;
+              }
+
+          }
+          return bresult;
+      }
+
+      [UmlElement(Id = "12745ac0-0a72-4540-b66d-4a50addb10c9")]
+      public bool haveuserbyid(string userid)
+      {
+          user tmpuser;
+
+          IExternalIdService ids = this.AsIObject().ServiceProvider.GetEcoService<IExternalIdService>();
+          tmpuser = ids.ObjectForId(userid).AsObject as user;
+          return haveuser(tmpuser);
+      }
+  }
+}

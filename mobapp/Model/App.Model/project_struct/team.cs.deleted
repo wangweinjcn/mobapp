@@ -1,0 +1,109 @@
+namespace App.Model.project_struct
+{
+  using System;
+  using System.Collections;
+  using System.Collections.Generic;
+  using System.ComponentModel;
+  using System.CodeDom.Compiler;
+  using Eco.ObjectImplementation;
+  using Eco.ObjectRepresentation;
+  using Eco.Services;
+  using Eco.Subscription;
+  using Eco.UmlCodeAttributes;
+  using Eco.UmlRt;
+    using App.Model.comm;
+
+  
+
+  
+  public partial class team {
+
+      [UmlElement(Id = "f2d907ac-8784-458f-bbf3-81046f47da73")]
+      public team_group addteamgroup(project currp)
+      {
+          team_group newtg;
+          
+          newtg = new team_group(this.AsIObject().ServiceProvider);
+          newtg.project = currp;
+          newtg.name = "newgroup";
+          newtg.team = this;
+          return newtg;
+      }
+
+      [UmlElement(Id = "742e08be-affb-4023-8907-0e5b7158a771")]
+      public void setleader(user leader)
+      {
+          if (haveuser(leader))
+              this.leader = leader;
+      }
+
+      [UmlElement(Id = "fd637c85-ae1f-41fe-a2d6-923796d2e4e4")]
+      public void setleadbyid(string userid)
+      {
+          user tmpuser;
+
+          IExternalIdService ids = this.AsIObject().ServiceProvider.GetEcoService<IExternalIdService>();
+          tmpuser = ids.ObjectForId(userid).AsObject as user;
+          setleader(tmpuser);
+      }
+
+      [UmlElement (Id = "f5a3cc87-2bb8-4587-8b00-e8b9eed6c98f")]
+      public bool haveuser(user tmpuser)
+      {
+          bool bresult=false;
+     string userid=this.AsIObject().ServiceProvider.GetEcoService<IExternalIdService>().IdForObject(tmpuser);
+          foreach(team_member tm in this.team_member)
+          {
+          if (tm.userid==userid)
+          {bresult=true;
+          break;
+          }
+
+          }
+          return bresult;
+      }
+
+      [UmlElement (Id = "0df149ac-1262-42ec-90fc-c4cec090fe2b")]
+      public bool haveuserbyid(string userid)
+      {
+       user tmpuser;
+
+          IExternalIdService ids = this.AsIObject().ServiceProvider.GetEcoService<IExternalIdService>();
+          tmpuser = ids.ObjectForId(userid).AsObject as user;
+          return haveuser(tmpuser);
+      }
+
+      [UmlElement(Id = "dcb24427-b081-4a11-940e-6a2780d8e53c")]
+      public IList<user> getalluser()
+      {
+          IList<user> userlist=new List<user>();
+          IOclService iocl = this.AsIObject().ServiceProvider.GetEcoService<IOclService>();
+          string strocl = "self.team_member.user";
+          foreach (user tmpobj in iocl.Evaluate(this, strocl).GetAsIList<user>())
+          {
+           if (!userlist.Contains(tmpobj))
+           {
+               userlist.Add(tmpobj);
+           }
+          }
+          return userlist;
+      }
+
+      [UmlElement(Id = "18310c4b-2b71-442c-8933-11ca0b13000f")]
+      public team_group addteamgroupbyid(string currpid)
+      {
+          project tmpobj;
+          IExternalIdService ids = this.AsIObject().ServiceProvider.GetEcoService<IExternalIdService>();
+          tmpobj = ids.ObjectForId(currpid).AsObject as project;
+          return addteamgroup(tmpobj);
+      }
+
+      [UmlElement(Id = "81cb24eb-7edc-41db-90ad-251c50e663e5")]
+      public string getalluserasjson()
+      {
+         string tmpstr="";
+        tmpstr= sys_function.objecttojson(getalluser());
+         return tmpstr;
+      }
+  }
+}

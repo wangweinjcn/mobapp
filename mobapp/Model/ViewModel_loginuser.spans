@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Span Name="ViewModel_loginuser" CodeGen="True" ColCount="0" ColWidth="50" ExpressionActAsForActions="" RowCount="0" RowHeight="20" TabOrder="DisplayOrderYBeforeX" id="b2f599af-7f14-4388-9b16-fd39656e1eab">
+  <Class>
+    <Class Name="user" idref="0d14d9b1-acc4-4db1-a5c4-5c2575662fe6" />
+  </Class>
+  <OwnedColumns>
+    <Column Name="Username" ActionPeriodicityMillisec="-1" ColSpan="1" ColSpanWhenInGrid="1" Expression="self.Username" ExpressionForReadOnly="" ExpressionForVisible="" IsAction="False" IsStatic="False" NullRowMode="None" NullRowRepresentation="" PresentationString="用户名：" PresentationStringColSpan="1" RowSpan="1" StyleRef="" XPos="1" YPos="0" id="b147bf84-67b4-4691-97bb-fb4dad88bb31">
+      <Rules>
+        <SpanValidationRule />
+        <SpanValidationRule />
+        <SpanValidationRule />
+        <SpanValidationRule />
+        <SpanValidationRule />
+      </Rules>
+      <TaggedValue>
+        <TaggedValue Tag="*System.ComponentModel.DataAnnotations.StringLength" Value="*100,ErrorMessage=&quot;{0}必须至少包含{2}个字符&quot;,MinimumLength=1" />
+        <TaggedValue Tag="*Mobapp.Model.FieldAttribute.Required" Value="*ErrorMessageID=&quot;It's wrong&quot;" />
+        <TaggedValue Tag="*Mobapp.Model.FieldAttribute.C_DisplayName" Value="*Name=&quot;Username&quot;" />
+      </TaggedValue>
+    </Column>
+    <Column Name="Password" ActionPeriodicityMillisec="-1" ColSpan="1" ColSpanWhenInGrid="1" Expression="self.Password" ExpressionForReadOnly="" ExpressionForVisible="" IsAction="False" IsStatic="False" NullRowMode="None" NullRowRepresentation="" PresentationString="密码：" PresentationStringColSpan="1" RowSpan="1" StyleRef="" XPos="1" YPos="1" id="7bb53e48-7398-4621-9f1b-67ed9e4a5e9d" />
+    <Column Name="RememberMe" ActionPeriodicityMillisec="-1" ColSpan="1" ColSpanWhenInGrid="1" Expression="self.rememberMe" ExpressionForReadOnly="" ExpressionForVisible="" IsAction="False" IsStatic="False" NullRowMode="None" NullRowRepresentation="" PresentationString="记住我：" PresentationStringColSpan="1" RowSpan="1" StyleRef="" XPos="1" YPos="2" id="ce742992-225d-4207-89a0-030b14810600" />
+  </OwnedColumns>
+  <SpanValidations>
+    <SpanValidationRule Name="Rule1" Expression="" Message="">
+      <ValidatesColumns>
+        <Column Name="Username" idref="b147bf84-67b4-4691-97bb-fb4dad88bb31" />
+      </ValidatesColumns>
+    </SpanValidationRule>
+  </SpanValidations>
+</Span>

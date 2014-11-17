@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5471CB99-45C2-4225-AD53-F1EEB9FCC2FA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mobapp.Model</RootNamespace>
+    <AssemblyName>Mobapp.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Eco.Handles" />
+    <Reference Include="Eco.Interfaces" />
+    <Reference Include="Eco.LinqExtender" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Actions.actions">
+      <DependentUpon>frmmodel.ecomdl</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Diagram1.ecodiag">
+      <DependentUpon>frmmodel.ecomdl</DependentUpon>
+    </None>
+    <None Include="documentation.modlrdoc">
+      <DependentUpon>frmmodel.ecomdl</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="frmmodel.ecomdl" />
+    <None Include="App.Model.ecopkg">
+      <DependentUpon>frmmodel.ecomdl</DependentUpon>
+    </None>
+    <EmbeddedResource Include="ViewModel_loginuser.spans">
+      <DependentUpon>frmmodel.ecomdl</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel_registeruser.spans">
+      <DependentUpon>frmmodel.ecomdl</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.Model\comm\basetree.cs" />
+    <Compile Include="App.Model\comm\basetree.eco.cs">
+      <DependentUpon>basetree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App.Model\comm\base_class.cs" />
+    <Compile Include="App.Model\comm\base_class.eco.cs">
+      <DependentUpon>base_class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App.Model\comm\comm.cs" />
+    <Compile Include="App.Model\comm\comm.eco.cs">
+      <DependentUpon>comm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App.Model\comm\data_action_log.cs" />
+    <Compile Include="App.Model\comm\data_action_log.eco.cs">
+      <DependentUpon>data_action_log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App.Model\comm\delete_obj.cs" />
+    <Compile Include="App.Model\comm\delete_obj.eco.cs">
+      <DependentUpon>delete_obj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App.Model\comm\dept.cs" />
+    <Compile Include="App.Model\comm\dept.eco.cs">
+      <DependentUpon>dept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App.Model\comm\menugroup.cs" />
+    <Compile Include="App.Model\comm\menugroup.eco.cs">
+      <DependentUpon>menugroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App.Model\comm\menuitem.cs" />
+    <Compile Include="App.Model\comm\menuitem.eco.cs">
+      <DependentUpon>menuitem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App.Model\comm\roles.cs" />
+    <Compile Include="App.Model\comm\roles.eco.cs">
+      <DependentUpon>roles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App.Model\comm\sys_function.cs" />
+    <Compile Include="App.Model\comm\sys_function.eco.cs">
+      <DependentUpon>sys_function.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App.Model\comm\sys_param.cs" />
+    <Compile Include="App.Model\comm\sys_param.eco.cs">
+      <DependentUpon>sys_param.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App.Model\comm\text_list.cs" />
+    <Compile Include="App.Model\comm\text_list.eco.cs">
+      <DependentUpon>text_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App.Model\comm\user.cs" />
+    <Compile Include="App.Model\comm\user.eco.cs">
+      <DependentUpon>user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App.Model\comm\user_role.cs" />
+    <Compile Include="App.Model\comm\user_role.eco.cs">
+      <DependentUpon>user_role.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App.Model\App.Model.cs" />
+    <Compile Include="App.Model\App.Model.eco.cs">
+      <DependentUpon>App.Model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FieldAttribute\CustomAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel_ViewModel_loginuser.cs" />
+    <Compile Include="ViewModel_ViewModel_registeruser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ModlrProject.mproj">
+      <DependentUpon>frmmodel.ecomdl</DependentUpon>
+    </None>
+    <None Include="ReadMe.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App.Model\project_struct\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

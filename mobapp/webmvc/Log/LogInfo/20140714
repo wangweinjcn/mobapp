@@ -1,0 +1,90 @@
+
+日志时间：2014-07-14 09:31:12,696 [13] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-07-14 09:31:12,696 [13] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-07-14 09:31:33,540 [9] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-07-14 09:31:33,540 [9] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Account[action:]Login 
+
+日志时间：2014-07-14 09:31:35,620 [9] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]Index 
+
+日志时间：2014-07-14 09:31:35,620 [9] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Home[action:]Index 
+
+日志时间：2014-07-14 09:31:46,526 [12] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Mdriven[action:]Index 
+
+日志时间：2014-07-14 09:31:46,526 [12] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Mdriven[action:]Index 
+
+日志时间：2014-07-14 09:31:57,333 [12] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Mdriven[action:]Create 
+
+日志时间：2014-07-14 09:31:57,333 [12] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Mdriven[action:]Create 
+
+日志时间：2014-07-14 09:31:58,195 [13] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Mdriven[action:]Index 
+
+日志时间：2014-07-14 09:31:58,195 [13] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Mdriven[action:]Index 
+
+日志时间：2014-07-14 09:32:01,841 [12] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Mdriven[action:]Edit 
+
+日志时间：2014-07-14 09:32:01,841 [12] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Mdriven[action:]Edit 
+
+日志时间：2014-07-14 09:32:13,272 [12] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Mdriven[action:]Edit 
+
+日志时间：2014-07-14 09:32:13,272 [12] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Mdriven[action:]Edit 
+
+日志时间：2014-07-14 09:32:13,411 [9] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Mdriven[action:]Index 
+
+日志时间：2014-07-14 09:32:13,411 [9] 
+日志级别：INFO  
+日 志 类：applog [(null)] 
+[ controller:]Mdriven[action:]Index 

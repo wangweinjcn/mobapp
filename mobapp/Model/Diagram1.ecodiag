@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Diagram Name="Diagram1" ChangeDate="0001/1/1 0:00:00" ColorOnNew="0" Comment="" Designer="" ShowAssociationNames="DimDefaults" ShowMethodReturnTypes="False" ShowMethodSignatures="False" ShowVisibility="False" SnapGridSize="8" SquareNewAssociations="False" SquareNewGeneralizations="False" ZoomScaleFactor="1.340095640625" Id="782bc230-61ef-44fe-87a9-84400aba8d10">
+  <PlacedClass>
+    <PlacedClass ClassId="0a5a94b3-07c2-43b6-a9b5-456a486a1613" Color="1692800256" LastKnownName="basetree" PickedFeatureVisibility="ShowAll" RenderedHeight="106" RenderedWidth="114" ShowAttributes="False" ShowMethods="False" Size="1" x="216" y="40" id="3a27301d-2039-497b-8450-b270c343f4b9">
+      <AssociationEndConnection>
+        <AssociationEndConnection LabelAngle="-0.785398163397448" LabelDistance="15" NextLegDrawKind="1" SideToUse="3" ViaPointsStartsHere="True" x="-57" y="96" id="4c22cd8b-06a8-4cf0-b9cc-a73d4a110293">
+          <AssociationEnd>
+            <AssociationEnd Name="basetree_parent" idref="9d0b58f3-8490-4086-9b0b-b21facf1a63e" />
+          </AssociationEnd>
+          <next>
+            <FreeAirViaPoint NextLegDrawKind="1" x="144" y="136" id="cd6b93ac-9133-4b7e-8617-87b6aa597f5e">
+              <next>
+                <FreeAirViaPoint NextLegDrawKind="1" x="144" y="72" id="f6971747-fd48-463b-9262-ce07489cdda2">
+                  <next>
+                    <FreeAirViaPoint NextLegDrawKind="1" x="120" y="72" id="0a5d2d95-9993-4558-9c3b-2409355cf2e1">
+                      <next>
+                        <FreeAirViaPoint NextLegDrawKind="1" x="120" y="8" id="0c3d9406-e910-47ab-92f5-9f7d2348853c">
+                          <next>
+                            <FreeAirViaPoint NextLegDrawKind="1" x="216" y="8" id="d69016ed-1b91-4445-8033-c70caac068c7">
+                              <next>
+                                <AssociationEndConnection LabelAngle="-0.785398163397448" LabelDistance="15" NextLegDrawKind="1" SideToUse="0" ViaPointsStartsHere="False" x="0" y="0" id="f5675dfe-a273-4070-a233-1e23baf107c6">
+                                  <AssociationEnd>
+                                    <AssociationEnd Name="basetree_children" idref="e5619c7a-a417-44e4-8675-4569de9a15d2" />
+                                  </AssociationEnd>
+                                </AssociationEndConnection>
+                              </next>
+                            </FreeAirViaPoint>
+                          </next>
+                        </FreeAirViaPoint>
+                      </next>
+                    </FreeAirViaPoint>
+                  </next>
+                </FreeAirViaPoint>
+              </next>
+            </FreeAirViaPoint>
+          </next>
+        </AssociationEndConnection>
+        <AssociationEndConnection LabelAngle="-0.785398163397448" LabelDistance="15" NextLegDrawKind="1" SideToUse="0" ViaPointsStartsHere="False" x="0" y="0" id="f5675dfe-a273-4070-a233-1e23baf107c6">
+          <AssociationEnd>
+            <AssociationEnd Name="basetree_children" idref="e5619c7a-a417-44e4-8675-4569de9a15d2" />
+          </AssociationEnd>
+        </AssociationEndConnection>
+      </AssociationEndConnection>
+      <Class>
+        <Class Name="basetree" idref="0a5a94b3-07c2-43b6-a9b5-456a486a1613" />
+      </Class>
+      <GeneralizationConnection>
+        <GeneralizationConnection NextLegDrawKind="0" SideToUse="2" ViaPointsStartsHere="False" x="-48" y="106" id="ca2259cb-ee05-4240-8237-47d9b031ed16">
+          <Class>
+            <Class Name="dept" idref="3ae899bf-fa72-464a-9079-b82abf1ca05c" />
+          </Class>
+        </GeneralizationConnection>
+      </GeneralizationConnection>
+    </PlacedClass>
+    <PlacedClass ClassId="8f40e617-81e7-4c9e-832a-9e8c7507da86" Color="1692800256" LastKnownName="sys_function" PickedFeatureVisibility="ShowAll" RenderedHeight="167" RenderedWidth="114" ShowAttributes="False" ShowMethods="False" Size="1" x="392" y="248" id="3e414a10-b7c8-461c-bf45-607afc6611c2">
+      <Class>
+        <Class Name="sys_function" idref="8f40e617-81e7-4c9e-832a-9e8c7507da86" />
+      </Class>
+    </PlacedClass>
+    <PlacedClass ClassId="18047d46-fd28-431d-87d4-a6f1bad088ba" Color="1692800256" LastKnownName="roles" PickedFeatureVisibility="ShowAll" RenderedHeight="65" RenderedWidth="95" ShowAttributes="False" ShowMethods="False" Size="1" x="704.427334424976" y="242.520003906904" id="63cd40b6-8266-449e-8d8f-0f7eaa07f664">
+      <AssociationEndConnection>
+        <AssociationEndConnection LabelAngle="-0.785398163397448" LabelDistance="15" NextLegDrawKind="0" SideToUse="3" ViaPointsStartsHere="True" x="-47.5" y="40" id="c6946633-5733-477f-9ee1-9bfbb2357fb3">
+          <AssociationEnd>
+            <AssociationEnd Name="roles" idref="c5e051b3-051d-4b75-b39f-d813b991b89c" />
+          </AssociationEnd>
+          <next>
+            <AssociationEndConnection LabelAngle="-0.785398163397448" LabelDistance="15" NextLegDrawKind="0" SideToUse="1" ViaPointsStartsHere="False" x="48.5" y="48" id="4cd3c462-34f3-43ab-829b-cf72984f9cf9">
+              <AssociationEnd>
+                <AssociationEnd Name="user_role" idref="9e658502-8531-4390-a22e-365dd7d59f7f" />
+              </AssociationEnd>
+            </AssociationEndConnection>
+          </next>
+        </AssociationEndConnection>
+      </AssociationEndConnection>
+      <Class>
+        <Class Name="roles" idref="18047d46-fd28-431d-87d4-a6f1bad088ba" />
+      </Class>
+    </PlacedClass>
+    <PlacedClass ClassId="3ae899bf-fa72-464a-9079-b82abf1ca05c" Color="1692800256" LastKnownName="dept" PickedFeatureVisibility="ShowAll" RenderedHeight="116" RenderedWidth="118" ShowAttributes="False" ShowMethods="False" Size="1" x="168" y="232" id="6afa5079-d0a1-4264-a512-0e92814a2a56">
+      <AssociationEndConnection>
+        <AssociationEndConnection LabelAngle="-0.785398163397448" LabelDistance="15" NextLegDrawKind="0" SideToUse="1" ViaPointsStartsHere="False" x="59" y="8" id="299b591a-4663-43c7-b9dd-834783013faa">
+          <AssociationEnd>
+            <AssociationEnd Name="my_dept" idref="dada5684-539a-477f-aff4-d38d1c1b1b58" />
+          </AssociationEnd>
+        </AssociationEndConnection>
+        <AssociationEndConnection LabelAngle="-0.785398163397448" LabelDistance="15" NextLegDrawKind="0" SideToUse="2" ViaPointsStartsHere="False" x="48" y="116" id="a3dd0f2f-98eb-4929-bb16-7b12dae38fb8">
+          <AssociationEnd>
+            <AssociationEnd Name="own_dept" idref="1b3ec297-2c1a-4cf4-8943-562802c421cd" />
+          </AssociationEnd>
+        </AssociationEndConnection>
+      </AssociationEndConnection>
+      <Class>
+        <Class Name="dept" idref="3ae899bf-fa72-464a-9079-b82abf1ca05c" />
+      </Class>
+      <SpecializationConnection>
+        <SpecializationConnection NextLegDrawKind="0" SideToUse="0" ViaPointsStartsHere="True" x="16" y="0" id="ad833b82-572e-4e5d-ac1b-b95b544bc27e">
+          <Class>
+            <Class Name="basetree" idref="0a5a94b3-07c2-43b6-a9b5-456a486a1613" />
+          </Class>
+          <next>
+            <GeneralizationConnection NextLegDrawKind="0" SideToUse="2" ViaPointsStartsHere="False" x="-48" y="106" id="ca2259cb-ee05-4240-8237-47d9b031ed16">
+              <Class>
+                <Class Name="dept" idref="3ae899bf-fa72-464a-9079-b82abf1ca05c" />
+              </Class>
+            </GeneralizationConnection>
+          </next>
+        </SpecializationConnection>
+      </SpecializationConnection>
+    </PlacedClass>
+    <PlacedClass ClassId="07638513-c3e8-401e-8c3f-5be8ce2e4456" Color="1692800256" LastKnownName="user_role" PickedFeatureVisibility="ShowAll" RenderedHeight="65" RenderedWidth="97" ShowAttributes="False" ShowMethods="False" Size="1" x="552" y="280" id="83ffe6c7-5fbb-439e-a160-f0c327ac8f35">
+      <AssociationEndConnection>
+        <AssociationEndConnection LabelAngle="-0.785398163397448" LabelDistance="15" NextLegDrawKind="0" SideToUse="1" ViaPointsStartsHere="False" x="48.5" y="48" id="4cd3c462-34f3-43ab-829b-cf72984f9cf9">
+          <AssociationEnd>
+            <AssociationEnd Name="user_role" idref="9e658502-8531-4390-a22e-365dd7d59f7f" />
+          </AssociationEnd>
+        </AssociationEndConnection>
+        <AssociationEndConnection LabelAngle="-0.785398163397448" LabelDistance="15" NextLegDrawKind="0" SideToUse="0" ViaPointsStartsHere="True" x="-8" y="0" id="a2beca1a-7704-4301-9c18-ea10a5724aa9">
+          <AssociationEnd>
+            <AssociationEnd Name="user_role" idref="f5930890-d968-482c-b110-1bdbaad6922a" />
+          </AssociationEnd>
+          <next>
+            <AssociationEndConnection LabelAngle="-0.785398163397448" LabelDistance="15" NextLegDrawKind="0" SideToUse="2" ViaPointsStartsHere="False" x="48" y="136" id="80cd6ca2-433c-4b38-a8fb-f6070476370a">
+              <AssociationEnd>
+                <AssociationEnd Name="user" idref="f0048243-9ab1-42f2-a043-fdd80ac7f3ef" />
+              </AssociationEnd>
+            </AssociationEndConnection>
+          </next>
+        </AssociationEndConnection>
+      </AssociationEndConnection>
+      <Class>
+        <Class Name="user_role" idref="07638513-c3e8-401e-8c3f-5be8ce2e4456" />
+      </Class>
+    </PlacedClass>
+    <PlacedClass ClassId="0d14d9b1-acc4-4db1-a5c4-5c2575662fe6" Color="1692800256" LastKnownName="user" PickedFeatureVisibility="ShowAll" RenderedHeight="136" RenderedWidth="159" ShowAttributes="False" ShowMethods="False" Size="1" x="488" y="16" id="85f09821-d571-445f-aab9-18bd3c3d10bd">
+      <AssociationEndConnection>
+        <AssociationEndConnection LabelAngle="-0.785398163397448" LabelDistance="15" NextLegDrawKind="0" SideToUse="2" ViaPointsStartsHere="False" x="48" y="136" id="80cd6ca2-433c-4b38-a8fb-f6070476370a">
+          <AssociationEnd>
+            <AssociationEnd Name="user" idref="f0048243-9ab1-42f2-a043-fdd80ac7f3ef" />
+          </AssociationEnd>
+        </AssociationEndConnection>
+        <AssociationEndConnection LabelAngle="-0.785398163397448" LabelDistance="15" NextLegDrawKind="0" SideToUse="3" ViaPointsStartsHere="True" x="-79.5" y="40" id="9b722dd8-17f2-4f35-b698-d5ac79448c5c">
+          <AssociationEnd>
+            <AssociationEnd Name="dept_allusers" idref="8c02c9f7-690d-4c28-9621-c7566b3987ee" />
+          </AssociationEnd>
+          <next>
+            <AssociationEndConnection LabelAngle="-0.785398163397448" LabelDistance="15" NextLegDrawKind="0" SideToUse="1" ViaPointsStartsHere="False" x="59" y="8" id="299b591a-4663-43c7-b9dd-834783013faa">
+              <AssociationEnd>
+                <AssociationEnd Name="my_dept" idref="dada5684-539a-477f-aff4-d38d1c1b1b58" />
+              </AssociationEnd>
+            </AssociationEndConnection>
+          </next>
+        </AssociationEndConnection>
+        <AssociationEndConnection LabelAngle="-0.785398163397448" LabelDistance="15" NextLegDrawKind="0" SideToUse="2" ViaPointsStartsHere="True" x="-64" y="136" id="a8e78eb7-20d6-4ccf-a7c7-212ce4324e34">
+          <AssociationEnd>
+            <AssociationEnd Name="dept_manager" idref="d411d7cb-948a-46a5-951f-14872f0b9c96" />
+          </AssociationEnd>
+          <next>
+            <AssociationEndConnection LabelAngle="-0.785398163397448" LabelDistance="15" NextLegDrawKind="0" SideToUse="2" ViaPointsStartsHere="False" x="48" y="116" id="a3dd0f2f-98eb-4929-bb16-7b12dae38fb8">
+              <AssociationEnd>
+                <AssociationEnd Name="own_dept" idref="1b3ec297-2c1a-4cf4-8943-562802c421cd" />
+              </AssociationEnd>
+            </AssociationEndConnection>
+          </next>
+        </AssociationEndConnection>
+      </AssociationEndConnection>
+      <Class>
+        <Class Name="user" idref="0d14d9b1-acc4-4db1-a5c4-5c2575662fe6" />
+      </Class>
+    </PlacedClass>
+    <PlacedClass ClassId="70702906-7062-474e-b7c0-574a844958ba" Color="1692800256" LastKnownName="menuitem" PickedFeatureVisibility="ShowAll" RenderedHeight="75" RenderedWidth="98" ShowAttributes="False" ShowMethods="False" Size="1" x="768" y="112" id="8de1bb3b-0e43-4d54-97d9-786cbf018860">
+      <AssociationEndConnection>
+        <AssociationEndConnection LabelAngle="-0.785398163397448" LabelDistance="15" NextLegDrawKind="0" SideToUse="0" ViaPointsStartsHere="True" x="-8" y="0" id="09014487-c215-4e0b-a9b5-060339d36508">
+          <AssociationEnd>
+            <AssociationEnd Name="menuitem" idref="c65ca723-50f2-4ded-8592-10197200482a" />
+          </AssociationEnd>
+          <next>
+            <AssociationEndConnection LabelAngle="-0.785398163397448" LabelDistance="15" NextLegDrawKind="0" SideToUse="2" ViaPointsStartsHere="False" x="0" y="54" id="149b8223-38aa-4d6f-bf8f-9fab22d1301d">
+              <AssociationEnd>
+                <AssociationEnd Name="menugroup" idref="014a02b9-99d7-46d6-96f4-8cf3b9577e0c" />
+              </AssociationEnd>
+            </AssociationEndConnection>
+          </next>
+        </AssociationEndConnection>
+      </AssociationEndConnection>
+      <Class>
+        <Class Name="menuitem" idref="70702906-7062-474e-b7c0-574a844958ba" />
+      </Class>
+    </PlacedClass>
+    <PlacedClass ClassId="7f1d47aa-8e08-4f17-b695-2898e07dfa33" Color="1692800256" LastKnownName="text_list" PickedFeatureVisibility="ShowAll" RenderedHeight="75" RenderedWidth="87" ShowAttributes="False" ShowMethods="False" Size="1" x="992" y="24" id="95ebe4d4-2beb-4fa0-bda3-f25fc0e4e541">
+      <Class>
+        <Class Name="text_list" idref="7f1d47aa-8e08-4f17-b695-2898e07dfa33" />
+      </Class>
+    </PlacedClass>
+    <PlacedClass ClassId="5c78977c-a410-44ad-a729-1b74e43a551d" Color="1692800256" LastKnownName="menugroup" PickedFeatureVisibility="ShowAll" RenderedHeight="54" RenderedWidth="91" ShowAttributes="False" ShowMethods="False" Size="1" x="768" y="8" id="e10bf1af-d17c-473a-b107-2b4a43d6dac8">
+      <AssociationEndConnection>
+        <AssociationEndConnection LabelAngle="-0.785398163397448" LabelDistance="15" NextLegDrawKind="0" SideToUse="2" ViaPointsStartsHere="False" x="0" y="54" id="149b8223-38aa-4d6f-bf8f-9fab22d1301d">
+          <AssociationEnd>
+            <AssociationEnd Name="menugroup" idref="014a02b9-99d7-46d6-96f4-8cf3b9577e0c" />
+          </AssociationEnd>
+        </AssociationEndConnection>
+      </AssociationEndConnection>
+      <Class>
+        <Class Name="menugroup" idref="5c78977c-a410-44ad-a729-1b74e43a551d" />
+      </Class>
+    </PlacedClass>
+    <PlacedClass ClassId="8f488c5c-ea34-48d5-b4c3-ea16b3ef850e" Color="1692800256" LastKnownName="sys_param" PickedFeatureVisibility="ShowAll" RenderedHeight="65" RenderedWidth="88" ShowAttributes="False" ShowMethods="False" Size="1" x="855.162844545575" y="232.819203750628" id="f0d5f15b-6a4e-46fa-99b6-e56515bcad8f">
+      <Class>
+        <Class Name="sys_param" idref="8f488c5c-ea34-48d5-b4c3-ea16b3ef850e" />
+      </Class>
+    </PlacedClass>
+  </PlacedClass>
+</Diagram>

@@ -1,0 +1,20 @@
+﻿@using Ecofrm.Model.comm
+@model IEnumerable<Ecofrm.Model.comm.menugroup>
+
+@(Html.Kendo().Menu()
+      .Name("Menu")
+      .BindTo(Model, mappings =>
+      {
+          mappings.For<menugroup>(binding => binding
+                  .ItemDataBound((item, menugroup) =>
+                  {
+                      item.Text = menugroup.name;
+                  })
+                  .Children(menugroup => menugroup.menuitem));
+          mappings.For<menuitem>(binding => binding
+                  .ItemDataBound((item, menuitem) =>
+                  {
+                      item.Text = menuitem.Name;
+                  }));
+      })
+)
